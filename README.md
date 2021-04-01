@@ -1,10 +1,30 @@
-# Getting Started with Create React App
+# Make-up Ecommerce App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is this app all about?
 
-## Available Scripts
+In this project I'm using the following api: http://makeup-api.herokuapp.com/api/v1/products.json. I'm building a make-up shopping site.
 
-In the project directory, you can run:
+## Features
+
+### Must have features:
+This site will contain:
+*A landing page, featuring all products by catagories and barnds.
+*A sign-up and Login area.
+*Each product individal page.
+*Cart page.
+
+this project invovles components and routes.
+
+### Future features:
+
+## Working process timeline:
+
+Friday 2/4/21: Building the landing page components & routes.
+Saturday 3/4/21: Building a product's page components.
+Sunday 4/4/21: Sign-up area page and cart's components.
+Monday 5/4/21: Css.
+Thursday 6/4/21: Css.
+Wedensday 7/4/21: Css.
 
 ### `npm start`
 
