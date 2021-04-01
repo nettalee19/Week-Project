@@ -37,3 +37,5 @@ Wednesday 7/4/21: Finishing touches & extra css.
 
 
 ## Main Page scatch:
+
+https://github.com/nettalee19/Week-Project/blob/master/src/Scatch/Screenshot%202021-04-01%20142056.jpg
