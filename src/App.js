@@ -1,12 +1,13 @@
-
 import './App.css';
+import Homepage from "./Components/Homepage"
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      hello netta
+      
+      <Homepage/>
     </div>
   );
 }
 
-export default App;
+

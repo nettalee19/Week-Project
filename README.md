@@ -16,12 +16,18 @@ This site will contain:
 this project invovles components and routes.
 
 ### Extra features:
+*Help page
+*Sale page
+
 
 ### Future features:
 
+
+
+
 ## Working process timeline:
 
-Thursday 1/4/21: Scatch ideas for the pages, coding the core of the site.
+Thursday 1/4/21: Scatch ideas for the pages, coding the core of the site. Learing the Api's documentation.
 
 Friday 2/4/21: Building the landing page components & routes.
 
