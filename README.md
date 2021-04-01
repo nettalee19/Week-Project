@@ -1,8 +1,8 @@
-# Make-up Ecommerce App
+# Make-up E-commerce App
 
 ## What is this app all about?
 
-In this project I'm using the following api: http://makeup-api.herokuapp.com/api/v1/products.json. I'm building a make-up shopping site.
+In this project I'm using the following api: http://makeup-api.herokuapp.com/api/v1/products.json. Based on it, I'm building a make-up shopping site.
 
 ## Features
 
@@ -15,9 +15,13 @@ This site will contain:
 
 this project invovles components and routes.
 
+### Extra features:
+
 ### Future features:
 
 ## Working process timeline:
+
+Thursday 1/4/21: Scatch ideas for the pages, coding the core of the site.
 
 Friday 2/4/21: Building the landing page components & routes.
 
@@ -25,11 +29,11 @@ Saturday 3/4/21: Building a product's page components.
 
 Sunday 4/4/21: Sign-up area page and cart's components.
 
-Monday 5/4/21: Css.
+Monday 5/4/21: Css. (short working day)
 
-Thursday 6/4/21: Css.
+Tuesday 6/4/21: Components.
 
-Wedensday 7/4/21: Css.
+Wednesday 7/4/21: Finishing touches & extra css.
 
 
 ## Main Page scatch:
