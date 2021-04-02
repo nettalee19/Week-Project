@@ -3,11 +3,13 @@ import React, { useState, useEffect } from 'react'
 import axios from "axios"
 import ProductCard from "./ProductCard"
 
+const proxy = 'https://api.allorigins.win/raw?url=';
+
 function Products() {
     const [makeup, setMakeup] = useState([])
     
     const makeupApi = async () =>{
-        const response = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json`)
+        const response = await axios.get(`${proxy}http://makeup-api.herokuapp.com/api/v1/products.json`)
         console.log(response.data)
         setMakeup(response.data)
     }

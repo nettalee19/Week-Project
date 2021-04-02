@@ -8,7 +8,7 @@ import MainContent from "./MainContent"
 import Footer from "./Footer"
 import Products from './Products'
 
-// const proxy = 'https://api.allorigins.win/raw?url=';
+
 
 
 export default function Homepage() {
