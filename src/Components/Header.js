@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Header(link) {
+const Header = ({left, main, right}) => {
     return (
         <div>
-            <p>{link}</p>
+            <p>{left}</p>
+            <p>{main}</p>
+            <p>{right}</p>
         </div>
     )
 }
