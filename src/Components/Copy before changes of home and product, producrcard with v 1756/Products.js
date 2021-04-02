@@ -5,8 +5,19 @@ import ProductCard from "./ProductCard"
 
 // const proxy = 'https://api.allorigins.win/raw?url=';
 
-function Products({makeup}) {
+function Products() {
+    const [makeup, setMakeup] = useState([])
     
+    const makeupApi = async () =>{
+        const response = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json`)
+        console.log(response.data)
+        setMakeup(response.data)
+    }
+    useEffect(() =>{
+        makeupApi()
+    }, [])
+    
+
     return (
         <div>
             {makeup.map((product) =>{

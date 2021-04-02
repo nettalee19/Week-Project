@@ -1,30 +1,29 @@
-import React, { useState, useEffect } from 'react'
-import axios from "axios"
+// import React, { useState, useEffect } from 'react'
+// import axios from "axios"
 import {BrowserRouter} from 'react-router-dom' //Route
 import Header from "./Header/Header"
 import HeaderCat from "./Header/HeaderCat"
+// import {Header, HeaderCat} from "./Components"
 import MainContent from "./MainContent"
-import Products from './Products'
 // import ProductCard from "./ProductCard"
 import Footer from "./Footer"
+import Products from './Products'
 
 
 
 
 export default function Homepage() {
 
-    const [makeup, setMakeup] = useState([])
+    // const [makeup, setMakeup] = useState([])
     
-    const makeupApi = async () =>{
-        const response = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json`)
-        // console.log(response.data)
-        setMakeup(response.data)
-    }
-    useEffect(() =>{
-        makeupApi()
-    }, [])
-
-    console.log(makeup)
+    // const makeupApi = async () =>{
+    //     const response = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json`)
+    //     console.log(response.data)
+    //     setMakeup(response.data)
+    // }
+    // useEffect(() =>{
+    //     makeupApi()
+    // }, [])
 
     // const [cart, setCart] = useState({})
     
@@ -55,8 +54,7 @@ export default function Homepage() {
 
                 <MainContent/>
 
-                {/* {makeup == null} ? <h1>Loading...</h1> : <Products makeup={makeup}/> */}
-                <Products makeup={makeup}/>
+                <Products/>
 
                 {/* {makeup.map((product, index) =>{
                     return <ProductCard

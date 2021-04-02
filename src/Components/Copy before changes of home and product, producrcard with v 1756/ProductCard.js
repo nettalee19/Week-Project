@@ -3,14 +3,12 @@ import React from 'react'
 // import {AddShoppingCart} from '@material-ui/icon'
 
 function Product_cube({product}) { //name, brand, price
-    // console.log(product)
-    
     return (
         <div>
             <div>
-                <img src={product.image_link} alt=""/>
-                <p>{product.brand}</p>
+                {/* <img src={product.image_link} alt=""/> */}
                 <h4>{product.name}</h4>
+                <h4>{product.brand}</h4>
                 <h4>{product.price}</h4>
                 <h4>{product.price_sign}</h4>
                 {/* <img src="" alt=""/>
