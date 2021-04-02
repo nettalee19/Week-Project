@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Header() {
+function Header(link) {
     return (
         <div>
-            this is a header
+            <p>{link}</p>
         </div>
     )
 }
