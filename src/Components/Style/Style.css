@@ -1,8 +1,17 @@
 
+.Prod{
+    /* display: flex;
+    justify-content: center; */
+    /* display: grid;
+    justify-content: center; */
+}
 .ProCard{
-    background: grey;
+    /* background: grey; */
     width: 20vw;
     margin: 15px;
+    text-align: center;
+    border: black 1px solid;
+    border-radius: 10px;
 }
 
 .ProCard img{
@@ -13,4 +22,9 @@
 .CardBtn{
     border-radius: 50px;
     background: pink;
+    margin: 10px;
+}
+
+.Cart{
+    background: grey;
 }

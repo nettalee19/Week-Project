@@ -3,9 +3,9 @@ import axios from "axios"
 import {BrowserRouter} from 'react-router-dom' //Route
 import "./Style/Style.css"
 
-import Header from "./Header/Header"
+// import Header from "./Header/Header"
 import HeaderCat from "./Header/HeaderCat"
-import MainContent from "./MainContent"
+// import MainContent from "./MainContent"
 import Products from './Products'
 import Cart from './Cart/Cart'
 // import ProductCard from "./ProductCard"
@@ -20,7 +20,7 @@ export default function Homepage() {
     const [cartItems, setCartItems] = useState([])
     
     const makeupApi = async () =>{
-        const response = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json`)
+        const response = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json/`)
         // console.log(response.data)
         setMakeup(response.data)
     }
@@ -31,7 +31,7 @@ export default function Homepage() {
     //     setcartItems(cartData)
     // } 
 
-    const addToCart = (product) =>{
+    const addToCart = ((product) =>{
         const exist = cartItems.find((item) =>item.id === product.id)
 
         if(exist){ //the item is already in the cart
@@ -43,7 +43,7 @@ export default function Homepage() {
         else{//is not in the cart
             setCartItems([...cartItems, {...product, qty: 1}])
         }
-    }
+    })
 
     const removeFromCart = (product) =>{
         const exist = cartItems.find((item) => item.id === product.item)
@@ -75,11 +75,11 @@ export default function Homepage() {
             <BrowserRouter>
                 
                 
-                <Header 
+                {/* <Header 
                 left={`choose country`}
                 main = {`Sign up now to get more deals`}
                 right = {`Help`}
-                />
+                /> */}
 {/* 
                 <Header 
                 left={`search for more`}
@@ -90,18 +90,22 @@ export default function Homepage() {
                 <HeaderCat/>
                 {/* להבין איך מקשרת בין האיפיאיי שלי ליצירת עמוד שלו, ליצירת קוביה שלו */}
 
-                <MainContent/>
-
+                {/* <MainContent/> */}
 
                 <Cart 
                 cartItems = {cartItems} 
                 addToCart={addToCart}
                 removeFromCart = {removeFromCart}
                 />
+
+                <Products 
+                makeup={makeup} 
+                addToCart={addToCart}
+                className="Prod"/>
+
                 
 
                 {/* {makeup == null} ? <h1>Loading...</h1> : <Products makeup={makeup}/> */}
-                <Products makeup={makeup}/>
 
                 {/* {makeup.map((product, index) =>{
                     return <ProductCard

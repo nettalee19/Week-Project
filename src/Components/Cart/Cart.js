@@ -14,21 +14,22 @@ function Cart({cartItems, addToCart, removeFromCart}) {
     // }
 
     return (
-        <div>
+        <div className="Cart">
             <h2>Shopping Cart</h2>
             <div>
-                {cartItems.length === 0 ? <div>Cart is empty </div>: <p>no</p> }
+                {cartItems.length === 0 ? <div>Cart is empty </div>: <p> </p> }
+                
             </div>
             {cartItems.map((item) =>{
-                <div key={item.id}>
+                return <div key={item.id}>
                     <div>{item.name}</div>
                     <div>
                         <button onClick={() =>addToCart(item)}>+</button>
                         <button onClick={() =>removeFromCart(item)}>-</button>
                     </div>
-                    <div>
+                    {/* <div>
                         {item.qty} X {item.price.toFixed(2)}
-                    </div>
+                    </div> */}
                 </div>
             })}
             {/* {isEmpty ? <EmptyCart/> : <FilledCart/> } */}

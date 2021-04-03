@@ -9,12 +9,12 @@ function Product_cube({product, addToCart}) { //name, brand, price
     return (
         <div className="ProCard">
             <div  >
-                <img src={product.image_link} alt=""/>
-                <p>{product.id}</p>
+                <img src={product.image_link} alt=""/> 
+                {/* error with img */}
+                {/* <p>{product.id}</p> */}
                 <p>{product.brand}</p>
                 <h4>{product.name}</h4>
-                <h4>{product.price}</h4>
-                <h4>{product.price_sign}</h4>
+                <h4>{product.price}{product.price_sign}</h4>
                 {/* <img src="" alt=""/>
                 <h4>{brand}</h4>
                 <p>{name}</p>
