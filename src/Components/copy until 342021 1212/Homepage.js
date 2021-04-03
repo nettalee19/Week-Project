@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from "axios"
-import {BrowserRouter, Switch, Route} from 'react-router-dom' //Route
+import {BrowserRouter} from 'react-router-dom' //Route
 import "./Style/Style.css"
 
 import Header from "./Header/Header"
@@ -71,35 +71,40 @@ export default function Homepage() {
     // }
     
     return (
-        <BrowserRouter>
-            <div>
+        <div>
+            <BrowserRouter>
+                
+                
                 <Header 
                 countCartItems= {cartItems.length}
                 // left={`choose country`}
                 // main = {`Sign up now to get more deals`}
                 // right = {`Help`}
                 />
+{/* 
+                <Header 
+                left={`search for more`}
+                main = {`ummmm`}
+                right = {`contect us`}
+                /> */}
 
-                {/* <MainContent headercat/> */}
-                <Switch>
-                    <Route exact path="/">
-                        <Products 
-                        makeup={makeup} 
-                        addToCart={addToCart}
-                        className="Prod"/>
-                        
-                    </Route>
-                    <Route exact path="/cart">
-                        <Cart 
-                        cartItems = {cartItems} 
-                        addToCart={addToCart}
-                        removeFromCart = {removeFromCart}
-                        />
+                {/* <HeaderCat/> */}
+                {/* להבין איך מקשרת בין האיפיאיי שלי ליצירת עמוד שלו, ליצירת קוביה שלו */}
 
-                    </Route>
+                {/* <MainContent/> */}
 
+                <Cart 
+                cartItems = {cartItems} 
+                addToCart={addToCart}
+                removeFromCart = {removeFromCart}
+                />
 
-                </Switch>
+                <Products 
+                makeup={makeup} 
+                addToCart={addToCart}
+                className="Prod"/>
+
+                
 
                 {/* {makeup == null} ? <h1>Loading...</h1> : <Products makeup={makeup}/> */}
 
@@ -113,9 +118,9 @@ export default function Homepage() {
                 })}
                  */}
 
-                {/* <Footer/> */}
-            </div>
-        </BrowserRouter>
+                <Footer/>
+            </BrowserRouter>
+        </div>
     )
 }
 

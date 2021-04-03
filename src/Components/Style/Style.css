@@ -32,6 +32,7 @@
 .Cart img{
     width: 10vw;
     height: 8vw;
+    border-radius: 4px;
     /* display: flex;
     justify-content: center; */
 }

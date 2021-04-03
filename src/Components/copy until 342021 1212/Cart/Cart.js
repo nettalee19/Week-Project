@@ -1,6 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import CardItemCard from "./CartItemCard/CardItemCard"
 
 function Cart({cartItems, addToCart, removeFromCart}) {
     // const isEmpty= true;
@@ -24,19 +22,13 @@ function Cart({cartItems, addToCart, removeFromCart}) {
 
     return (
         <div className="Cart">
-            <Link to={`/`}>
-            Back for more items!
-            </Link>
             <h2>Shopping Cart</h2>
             <div>
                 {cartItems.length === 0 ? <div>Cart is empty </div>: <p> </p> }
                 
             </div>
-            
             {cartItems.map((item) =>{
-                return (
-                    <div key={item.id}>
-                        {/* <CardItemCard/> */}
+                return <div key={item.id}>
                     <img src={item.image_link} alt=""/>
                     <div>{item.name}</div>
                     <div>
@@ -45,8 +37,9 @@ function Cart({cartItems, addToCart, removeFromCart}) {
                     </div>
                     <div>
                         {item.qty} X {item.price}{item.price_sign}
+                        
                     </div>
-                </div>)
+                </div>
             })}
 
             {cartItems.length !== 0 ? (

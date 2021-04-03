@@ -9,7 +9,6 @@ function Products({makeup, addToCart}) {
     
     return (
         <div>
-            All Products
             {makeup.map((product) =>{
                     return <ProductCard
                     key={product.id}

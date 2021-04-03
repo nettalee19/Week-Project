@@ -24,7 +24,7 @@ function Product_cube({product, addToCart}) { //name, brand, price
                 <p>Extra info</p>
                 <p>Sale?</p> */}
             </div>
-            <button className="CardBtn" onClick={() =>addToCart(product)}>Add to Cart</button><br></br>
+            <button className="CardBtn" onClick={() =>addToCart(product)}>Add to bag</button><br></br>
         </div>
     )
 }
