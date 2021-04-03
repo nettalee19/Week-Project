@@ -1,17 +1,27 @@
 
-.Prod{
+.ProductCard{
     /* display: flex;
     justify-content: center; */
     /* display: grid;
     justify-content: center; */
+    /* display: grid;
+    grid-template-columns: 2fr; */
 }
+
 .ProCard{
-    /* background: grey; */
+    /* display: flex;
+    justify-content: center; */
     width: 20vw;
     margin: 15px;
     text-align: center;
     border: black 1px solid;
     border-radius: 10px;
+    
+}
+
+.ProCard p{
+    color: grey;
+    font-weight: 700;
 }
 
 .ProCard img{
@@ -19,14 +29,41 @@
     height: 10vw;
 }
 
+.ProCard a{
+    text-decoration: none;
+    color: black;
+}
+
+.ProCard a:hover h4{
+    /* color: rgba(0, 0, 0, 0.616); */
+    text-decoration: underline;
+}
+
 .CardBtn{
-    border-radius: 50px;
-    background: pink;
+    border: black 1px solid;
+    border-radius: 5px;
+    background: none;
     margin: 10px;
+    width: 90%;
+    transition: 0.4s
+}
+
+.CardBtn:hover{
+   
+    color: white;
+    background: black;
+    
 }
 
 .Cart{
     background: grey;
+    /* display: flex; */
+    
+}
+
+.CartItems{
+    display: flex;
+    flex-direction: row;
 }
 
 .Cart img{
@@ -35,4 +72,9 @@
     border-radius: 4px;
     /* display: flex;
     justify-content: center; */
+}
+
+.CartPrice{
+    margin: 10px;
+   display: grid;
 }

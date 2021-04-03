@@ -36,43 +36,45 @@ function Cart({cartItems, addToCart, removeFromCart}) {
             
             {cartItems.map((item) =>{
                 return (
-                    <div key={item.id}>
-                        {/* <CardItemCard/> */}
-                    <img src={item.image_link} alt=""/>
-                    <div>{item.name}</div>
-                    <div>
-                        <button onClick={() =>addToCart(item)}>+</button>
-                        <button onClick={() =>removeFromCart(item)}>-</button>
-                    </div>
-                    <div>
-                        {item.qty} X {item.price}{item.price_sign}
-                    </div>
-                </div>)
+                    <div >
+                        <div key={item.id} >
+                            <img src={item.image_link} alt=""/>
+                            <div>{item.name}</div>
+                            <div>
+                                <button onClick={() =>addToCart(item)}>+</button>
+                                <button onClick={() =>removeFromCart(item)}>-</button>
+                            </div>
+                            <div>
+                                {item.qty} X {item.price}{item.price_sign}
+                            </div>
+                        </div>
+                    </div>)
+
             })}
 
             {cartItems.length !== 0 ? (
-                <>
+                <div className="CartPrice">
                 <hr></hr>
-                <div>
-                    <div>Items Price</div>
-                    <div>${itemsPrice}</div>
+                    <div >
+                        <div>Items Price</div>
+                        <div>${itemsPrice}</div>
+                    </div>
+                    <div>
+                        <div>Shipping</div>
+                        <div>${shippingPrice}</div>
+                    </div>
+                    <div>
+                        <div><strong>Total</strong></div>
+                        <div><strong>${totalPrice}</strong></div>
+                    </div>
                 </div>
-                <div>
-                    <div>Shipping</div>
-                    <div>${shippingPrice}</div>
-                </div>
-                <div>
-                    <div><strong>Total</strong></div>
-                    <div><strong>${totalPrice}</strong></div>
-                </div>
-                </>
             ) : <></>}
 
             <hr/>
             <Link to={`/checkout`}>
             Checkout >>
             </Link>
-            
+
             {/* {isEmpty ? <EmptyCart/> : <FilledCart/> } */}
             {/* <input type="button" value="Checkout >>" />
             <a href="#">Checkout >></a> */}

@@ -11,7 +11,7 @@ function Products({makeup, addToCart}) {
         <div>
             All Products
             {makeup.map((product) =>{
-                    return <ProductCard
+                    return <ProductCard className="ProductCard"
                     key={product.id}
                     product={product}
                     addToCart={addToCart}

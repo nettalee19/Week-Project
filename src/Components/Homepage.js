@@ -91,7 +91,7 @@ export default function Homepage() {
                         
                     </Route>
                     <Route exact path="/cart">
-                        <Cart 
+                        <Cart  className="CartItems"
                         cartItems = {cartItems} 
                         addToCart={addToCart}
                         removeFromCart = {removeFromCart}
@@ -101,7 +101,7 @@ export default function Homepage() {
 
                     <Route exact path="/checkout">
                         <Checkout 
-                        
+                        // cart={cart}
                         />
 
                     </Route>
