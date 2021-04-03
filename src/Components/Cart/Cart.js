@@ -12,6 +12,13 @@ function Cart({cartItems, addToCart, removeFromCart}) {
 
     //     </div>
     // }
+    const itemsPrice = cartItems.reduce((acc, cur) => {
+        return acc+cur.price * cur.qty
+    }, 0)
+
+    const shippingPrice = itemsPrice > 100 ? 0 : 20
+
+    const totalPrice = itemsPrice + shippingPrice
 
     return (
         <div className="Cart">
@@ -30,10 +37,28 @@ function Cart({cartItems, addToCart, removeFromCart}) {
                     </div>
                     <div>
                         {item.qty} X {item.price}{item.price_sign}
-                        {/* {item.qty} X {item.price.toFixed(2)} */}
+                        
                     </div>
                 </div>
             })}
+
+            {cartItems.length !== 0 ? (
+                <>
+                <hr></hr>
+                <div>
+                    <div>Items Price</div>
+                    <div>${itemsPrice}</div>
+                </div>
+                <div>
+                    <div>Shipping</div>
+                    <div>${shippingPrice}</div>
+                </div>
+                <div>
+                    <div><strong>Total</strong></div>
+                    <div><strong>${totalPrice}</strong></div>
+                </div>
+                </>
+            ) : <></>}
             {/* {isEmpty ? <EmptyCart/> : <FilledCart/> } */}
         </div>
     )
