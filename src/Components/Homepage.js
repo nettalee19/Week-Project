@@ -11,7 +11,7 @@ import Cart from './Cart/Cart'
 // import ProductCard from "./ProductCard"
 import Footer from "./Footer"
 
-
+const proxy = 'https://api.allorigins.win/raw?url=';
 
 
 export default function Homepage() {
@@ -20,7 +20,7 @@ export default function Homepage() {
     const [cartItems, setCartItems] = useState([])
     
     const makeupApi = async () =>{
-        const response = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json/`)
+        const response = await axios.get(`${proxy}http://makeup-api.herokuapp.com/api/v1/products.json/`)
         // console.log(response.data)
         setMakeup(response.data)
     }

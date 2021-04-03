@@ -28,3 +28,10 @@
 .Cart{
     background: grey;
 }
+
+.Cart img{
+    width: 10vw;
+    height: 8vw;
+    /* display: flex;
+    justify-content: center; */
+}

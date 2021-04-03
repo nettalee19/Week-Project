@@ -22,14 +22,16 @@ function Cart({cartItems, addToCart, removeFromCart}) {
             </div>
             {cartItems.map((item) =>{
                 return <div key={item.id}>
+                    <img src={item.image_link} alt=""/>
                     <div>{item.name}</div>
                     <div>
                         <button onClick={() =>addToCart(item)}>+</button>
                         <button onClick={() =>removeFromCart(item)}>-</button>
                     </div>
-                    {/* <div>
-                        {item.qty} X {item.price.toFixed(2)}
-                    </div> */}
+                    <div>
+                        {item.qty} X {item.price}{item.price_sign}
+                        {/* {item.qty} X {item.price.toFixed(2)} */}
+                    </div>
                 </div>
             })}
             {/* {isEmpty ? <EmptyCart/> : <FilledCart/> } */}
