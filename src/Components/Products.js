@@ -3,7 +3,7 @@
 // import axios from "axios"
 import ProductCard from "./ProductCard"
 
-// const proxy = 'https://api.allorigins.win/raw?url=';
+
 
 function Products({makeup, addToCart}) {
     

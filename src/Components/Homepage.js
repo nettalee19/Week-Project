@@ -46,9 +46,9 @@ export default function Homepage() {
     })
 
     const removeFromCart = (product) =>{
-        const exist = cartItems.find((item) => item.id === product.item)
+        const exist = cartItems.find((item) => item.id === product.id)
         if(exist.qty === 1){ //if the item qty is 1- should be roemoved
-            setCartItems(cartItems.filter((item) => item.id !== product.id) )//removal
+            setCartItems(cartItems.filter((item) => item.id !== product.id) )//removal, returns bollean
         }
         else{ //qty is larger than 1
             setCartItems(
