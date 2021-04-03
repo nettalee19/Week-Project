@@ -1,0 +1,16 @@
+
+.ProCard{
+    background: grey;
+    width: 20vw;
+    margin: 15px;
+}
+
+.ProCard img{
+    width: 18vw;
+    height: 10vw;
+}
+
+.CardBtn{
+    border-radius: 50px;
+    background: pink;
+}

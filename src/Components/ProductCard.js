@@ -1,14 +1,16 @@
 import React from 'react'
+
 // import {Card, CardMedia, CardContect, CardActions, Typography, IconButton} from '@material-ui/core'
 // import {AddShoppingCart} from '@material-ui/icon'
 
-function Product_cube({product}) { //name, brand, price
+function Product_cube({product, addToCart}) { //name, brand, price
     // console.log(product)
     
     return (
-        <div>
-            <div>
+        <div className="ProCard">
+            <div  >
                 <img src={product.image_link} alt=""/>
+                <p>{product.id}</p>
                 <p>{product.brand}</p>
                 <h4>{product.name}</h4>
                 <h4>{product.price}</h4>
@@ -22,7 +24,7 @@ function Product_cube({product}) { //name, brand, price
                 <p>Extra info</p>
                 <p>Sale?</p> */}
             </div>
-            <div>Add to bag</div><br></br>
+            <button className="CardBtn" onClick={() =>addToCart(product)}>Add to bag</button><br></br>
         </div>
     )
 }
