@@ -8,6 +8,7 @@ import HeaderCat from "./Header/HeaderCat"
 // import MainContent from "./MainContent"
 import Products from './Products'
 import Cart from './Cart/Cart'
+import Checkout from './Checkout Form/Checkout/Checkout'
 // import ProductCard from "./ProductCard"
 import Footer from "./Footer"
 
@@ -94,6 +95,13 @@ export default function Homepage() {
                         cartItems = {cartItems} 
                         addToCart={addToCart}
                         removeFromCart = {removeFromCart}
+                        />
+
+                    </Route>
+
+                    <Route exact path="/checkout">
+                        <Checkout 
+                        
                         />
 
                     </Route>

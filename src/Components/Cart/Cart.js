@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import CardItemCard from "./CartItemCard/CardItemCard"
 
+
 function Cart({cartItems, addToCart, removeFromCart}) {
     // const isEmpty= true;
 
@@ -68,10 +69,13 @@ function Cart({cartItems, addToCart, removeFromCart}) {
             ) : <></>}
 
             <hr/>
-            <input type="button" value="Checkout >>" />
-            <a href="#">Checkout >></a>
+            <Link to={`/checkout`}>
+            Checkout >>
+            </Link>
             
             {/* {isEmpty ? <EmptyCart/> : <FilledCart/> } */}
+            {/* <input type="button" value="Checkout >>" />
+            <a href="#">Checkout >></a> */}
         </div>
     )
 }
