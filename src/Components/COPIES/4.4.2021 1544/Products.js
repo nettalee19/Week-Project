@@ -9,7 +9,7 @@ function Products({makeup, addToCart}) {
 
     const [search, setSearch] = useState('')
 
-    // const searchCat = ["name", "brand", "category", "product_type"]
+    const searchCat = ["name", "brand", "category", "product_type"]
     
     return (
         <div>
@@ -18,6 +18,7 @@ function Products({makeup, addToCart}) {
             All Products
             <select name="" id=""></select>
             <input type="text" placeholder="Search by name" onChange={event => { setSearch(event.target.value)}}/>
+            
             
 
             {makeup.filter((product) =>{
@@ -33,20 +34,23 @@ function Products({makeup, addToCart}) {
                     key={product.id}
                     product={product}
                     addToCart={addToCart}
+                    // key = {index}
+                    // name = {product.name}
+                    // barnd = {product.brand}
+                    // price = {product.price}
                     />
             })}
 
 
-            
-        </div>
-    )
-}
-
-export default Products
-/* {makeup.map((product) =>{
+            {/* {makeup.map((product) =>{
                     return <ProductCard className="ProductCard"
                     key={product.id}
                     product={product}
                     addToCart={addToCart}
                     />
-            })} */
+            })} */}
+        </div>
+    )
+}
+
+export default Products

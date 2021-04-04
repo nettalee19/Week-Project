@@ -17,6 +17,8 @@ export default function AddressForm() {
         console.log(response.data)
     }
 
+    getShippingCountries() ////////////
+
     return (
         <div>
             <h2>Shipping Address:</h2>

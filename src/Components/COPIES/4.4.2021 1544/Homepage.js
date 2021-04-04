@@ -18,8 +18,6 @@ import SelectedItem from "./SelectedItem"
 
 
 const proxy = 'https://api.allorigins.win/raw?url=';
-// 'https://api.codetabs.com/v1/proxy/?quest=';
-
 
 
 export default function Homepage() {

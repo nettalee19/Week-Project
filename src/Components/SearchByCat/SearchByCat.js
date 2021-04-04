@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react'
-import data from "../data"
+// import data from "../data"
+import ProductCard from "../ProductCard"
 
-export default function SearchByCat() {
+export default function SearchByCat({makeup}) {
     const [request, setRequest] = useState([])
     const [query, setQuery] = useState('')
     const [search, setSearch] = useState('')
 
-    
-    
+
     return (
         <div>
             this is search
             <input type="text" placeholder="Search here" onChange={event => {setSearch(event.target.value)}}/>
             <input type="button"/>
 
-            {data.filter((item) =>{
+            {makeup.filter((item) =>{
                 if(search ==''){
                     return item
                 }
