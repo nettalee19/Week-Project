@@ -4,7 +4,6 @@
 import ProductCard from "./ProductCard"
 
 
-
 function Products({makeup, addToCart}) {
     
     return (

@@ -1,20 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import CardItemCard from "./CartItemCard/CardItemCard"
+// import CardItemCard from "./CartItemCard/CardItemCard"
 
 
 function Cart({cartItems, addToCart, removeFromCart}) {
-    // const isEmpty= true;
-
-    // const EmptyCart = () =>{
-    //    <div> No items in shopping cart :(</div>
-    // }
-
-    // const FilledCart = () =>{
-    //     <div>
-
-    //     </div>
-    // }
+    
     const itemsPrice = cartItems.reduce((acc, cur) => {
         return acc+cur.price * cur.qty
     }, 0)
@@ -24,7 +14,7 @@ function Cart({cartItems, addToCart, removeFromCart}) {
     const totalPrice = itemsPrice + shippingPrice
 
     return (
-        <div className="Cart">
+        <div className="Cart block col-1">
             <Link to={`/`}>
             Back for more items!
             </Link>
@@ -36,42 +26,42 @@ function Cart({cartItems, addToCart, removeFromCart}) {
             
             {cartItems.map((item) =>{
                 return (
-                    <div >
-                        <div key={item.id} >
+                    
+                        <div key={item.id} className="row">
                             <img src={item.image_link} alt=""/>
-                            <div>{item.name}</div>
-                            <div>
-                                <button onClick={() =>addToCart(item)}>+</button>
-                                <button onClick={() =>removeFromCart(item)}>-</button>
+                            <div className="col-2">{item.name}</div>
+                            <div className="col-2">
+                                <button onClick={() =>addToCart(item) } className="cartBtn plus">+</button>
+                                <button onClick={() =>removeFromCart(item)} className="cartBtn minus">-</button>
                             </div>
-                            <div>
+                            <div className="col-2 text-right">
                                 {item.qty} X {item.price}{item.price_sign}
                             </div>
                         </div>
-                    </div>)
+                    )
 
             })}
 
             {cartItems.length !== 0 ? (
                 <div className="CartPrice">
                 <hr></hr>
-                    <div >
-                        <div>Items Price</div>
-                        <div>${itemsPrice}</div>
+                    <div className="row">
+                        <div className="col-2">Items Price</div>
+                        <div className="col-1 text-right">${itemsPrice}</div>
                     </div>
-                    <div>
-                        <div>Shipping</div>
-                        <div>${shippingPrice}</div>
+                    <div className="row">
+                        <div className="col-2">Shipping</div>
+                        <div className="col-1 text-right">${shippingPrice}</div>
                     </div>
-                    <div>
-                        <div><strong>Total</strong></div>
-                        <div><strong>${totalPrice}</strong></div>
+                    <div className="row">
+                        <div className="col-2"><strong>Total</strong></div>
+                        <div className="col-1 text-right"><strong>${totalPrice}</strong></div>
                     </div>
                 </div>
             ) : <></>}
 
             <hr/>
-            <Link to={`/checkout`}>
+            <Link to={`/checkout`} className="checkout row">
             Checkout >>
             </Link>
 

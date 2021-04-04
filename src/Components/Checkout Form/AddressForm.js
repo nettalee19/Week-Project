@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 const country = 'https://restcountries.herokuapp.com/api/v1/region/';
 const proxy = 'https://api.allorigins.win/raw?url';
 
 export default function AddressForm() {
     const [shippingCountries, setShippingCountries] = useState([])
-    const [shippingCountry, setShippingCountry] = useState('')
-    const [shippingSubdivisions, setShippingSubdivisions] = useState([])
-    const [shippingSubdivision, setShippingSubdivision] = useState('')
-    const [shippingOptions, setShippingOptions] = useState([])
-    const [shippingOption, setShippingOption] = useState('')
+    // const [shippingCountry, setShippingCountry] = useState('')
+    // const [shippingSubdivisions, setShippingSubdivisions] = useState([])
+    // const [shippingSubdivision, setShippingSubdivision] = useState('')
+    // const [shippingOptions, setShippingOptions] = useState([])
+    // const [shippingOption, setShippingOption] = useState('')
 
     const getShippingCountries = async(checkoutId) =>{
         const response = await axios.get(`${proxy}${country}`)

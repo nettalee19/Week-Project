@@ -1,6 +1,7 @@
 import React from 'react'
 
-const CardItemCard = ({item}) => {
+const CardItemCard = () => { 
+    // {item}
     return (
         <div>
             CardItemCard

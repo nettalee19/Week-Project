@@ -4,33 +4,34 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom' //Route
 import "./Style/Style.css"
 
 import Header from "./Header/Header"
-import HeaderCat from "./Header/HeaderCat"
+// import HeaderCat from "./Header/HeaderCat"
 // import MainContent from "./MainContent"
 import Products from './Products'
 import Cart from './Cart/Cart'
 import Checkout from './Checkout Form/Checkout/Checkout'
 // import ProductCard from "./ProductCard"
-import Footer from "./Footer"
+// import Footer from "./Footer"
+// import data2 from "./data2"
+import data2 from "./data"
+
 
 const proxy = 'https://api.allorigins.win/raw?url=';
 
 
 export default function Homepage() {
-
+    
     const [makeup, setMakeup] = useState([])
     const [cartItems, setCartItems] = useState([])
     
     const makeupApi = async () =>{
-        const response = await axios.get(`${proxy}http://makeup-api.herokuapp.com/api/v1/products.json/`)
-        // console.log(response.data)
-        setMakeup(response.data)
+        // const response = await axios.get(`${proxy}http://makeup-api.herokuapp.com/api/v1/products.json/`)
+        const response = data2;
+        //response.data
+        // console.log(response)
+        setMakeup(response)
     }
 
-    // const getCart = async() =>{
-    //     const cartData = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json`)
-        
-    //     setcartItems(cartData)
-    // } 
+     
 
     const addToCart = ((product) =>{
         const exist = cartItems.find((item) =>item.id === product.id)
@@ -61,15 +62,11 @@ export default function Homepage() {
 
     useEffect(() =>{
         makeupApi()
-        //getCart()
+        
     }, [])
 
     console.log(makeup)
 
-    
-    // const addToCart = async(productId, quantity) =>{
-        
-    // }
     
     return (
         <BrowserRouter>
@@ -91,7 +88,7 @@ export default function Homepage() {
                         
                     </Route>
                     <Route exact path="/cart">
-                        <Cart  className="CartItems"
+                        <Cart 
                         cartItems = {cartItems} 
                         addToCart={addToCart}
                         removeFromCart = {removeFromCart}
@@ -109,7 +106,22 @@ export default function Homepage() {
 
                 </Switch>
 
-                {/* {makeup == null} ? <h1>Loading...</h1> : <Products makeup={makeup}/> */}
+                
+
+                {/* <Footer/> */}
+            </div>
+        </BrowserRouter>
+    )
+}
+
+// const getCart = async() =>{
+    //     const cartData = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json`)
+        
+    //     setcartItems(cartData)
+    // }
+
+
+    {/* {makeup == null} ? <h1>Loading...</h1> : <Products makeup={makeup}/> */}
 
                 {/* {makeup.map((product, index) =>{
                     return <ProductCard
@@ -120,10 +132,3 @@ export default function Homepage() {
                     />
                 })}
                  */}
-
-                {/* <Footer/> */}
-            </div>
-        </BrowserRouter>
-    )
-}
-

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import CardItemCard from '../../Cart/CartItemCard/CardItemCard'
+import React, { useState } from 'react'
+// import CardItemCard from '../../Cart/CartItemCard/CardItemCard'
 import AddressForm from '../../Checkout Form/AddressForm'
 import PaymentForm from '../../Checkout Form/PaymentForm'
-import axios from 'axios'
-const country = 'https://restcountries.herokuapp.com/api/v1/region/';
-const proxy = 'https://api.allorigins.win/raw?url';
+// import axios from 'axios'
+// const country = 'https://restcountries.herokuapp.com/api/v1/region/';
+// const proxy = 'https://api.allorigins.win/raw?url';
 
 const steps = ['Shipping address', 'Payment details']
 const Checkout = () => {
@@ -26,11 +26,11 @@ const Checkout = () => {
     //     </div>
     // }
 
-    const Form = () =>{
-        activeStep === 0 
-        ? <AddressForm/>
-        : <PaymentForm/>
-    }
+    // const Form = () =>{
+    //     activeStep === 0 
+    //     ? <AddressForm/>
+    //     : <PaymentForm/>
+    // }
 
     return (
         <div>
@@ -40,8 +40,8 @@ const Checkout = () => {
                     <CardItemCard key ={step}/>
                 ))} */}
 
-                <AddressForm/>
-                <PaymentForm/>
+                {/* <AddressForm/>
+                <PaymentForm/> */}
 
                 {/* {activeStep === steps.length ? <Confirmation/>: <Form/>}  */}
                 {/* last step ^ */}
