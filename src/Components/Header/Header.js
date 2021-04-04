@@ -14,13 +14,16 @@ const Header = ({countCartItems}) => {
             <p>{right}</p> */}
             <ul>
                 <li>Smash</li>
+                <li>Shop by Category</li>
+                <li>Mascaras</li>
+                <li>Face</li>
                 
             
             
 
             <li>{location.pathname === '/' ? (
             <Link to={`/cart`}>
-                <p><i className="fas fa-shopping-cart"></i>{' '}</p>
+                <i className="fas fa-shopping-cart"></i> {' '}
                 {countCartItems? (//if it exists and is no zero
                     <button class="countBtn">{countCartItems}</button>
                 ): ('')} 
