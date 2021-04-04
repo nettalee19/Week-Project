@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, useLocation} from 'react-router-dom'
 import SearchByCat from '../SearchByCat/SearchByCat';
+// import SearchByCat from '../SearchByCat/SearchByCat';
 
 const Header = ({countCartItems}) => {
     const location = useLocation();
@@ -11,7 +12,7 @@ const Header = ({countCartItems}) => {
             <p>{main}</p>
             <p>{right}</p> */}
 
-            <SearchByCat/>
+            {/* <SearchByCat/> */}
 
             {location.pathname === '/' ? (
             <Link to={`/cart`}>
