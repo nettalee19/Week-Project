@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 // import axios from "axios"
 import {BrowserRouter, Switch, Route} from 'react-router-dom' //Route
 import "./Style/Style.css"
+import "./Style/Mobile.css"
 
 import Header from "./Header/Header"
 // import HeaderCat from "./Header/HeaderCat"

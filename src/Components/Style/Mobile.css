@@ -1,0 +1,36 @@
+@media(max-width: 500px){
+
+
+    .Product{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        display: grid;
+        grid-template-columns: repeat(2, 15rem);
+    }
+    .ProCard{
+        width: 70%;
+        margin: 15px;
+        padding: -10px;
+        text-align: center;
+        border: black 1px solid;
+        border-radius: 10px;
+        
+    }
+}
+
+@media(min-width: 501px) and (max-width: 768px){
+    .Product{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        display: grid;
+        grid-template-columns: repeat(3, 15rem);
+    }
+}
+
+
+
+
+
+
