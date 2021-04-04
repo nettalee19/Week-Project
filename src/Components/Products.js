@@ -21,12 +21,13 @@ function Products({makeup, addToCart}) {
             
 
             {makeup.filter((product) =>{
-                if(search === ''){
-                    return product
-                }
-                else if(product.name.toLowerCase().includes(search)){
-                    return product
-                }
+                return product.name.toLowerCase().includes(search.toLowerCase())
+                // if(search === ''){
+                //     return product;
+                // }
+                // else if(product.name.toLowerCase().includes(search)){
+                //     return product;
+                // }
                 
             }).map((product) =>{
                     return <ProductCard className="ProductCard"
