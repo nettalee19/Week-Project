@@ -4,6 +4,7 @@
     display: grid;
     /* grid-template-columns: 20rem 20rem 20rem 20rem; */
     grid-template-columns: repeat(4, 20rem [col-start]);
+    /* box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
 }
 .ProductCard{
     /* display: flex;
@@ -19,9 +20,10 @@
     width: 20vw;
     margin: 15px;
     text-align: center;
-    border: black 1px solid;
-    border-radius: 10px;
-    
+    /* border: black 1px solid;
+    border-radius: 10px; */
+    /* box-shadow: 1px 1px 2px grey, 0 0 5px grey, 0 0 1px lightblue; */
+    box-shadow: 1px 1px 2px grey, 0 0 5px grey, 0 0 1px lightblue;
 }
 
 .ProCard p{
@@ -31,7 +33,7 @@
 
 .ProCard img{
     width: 18vw;
-    height: 10vw;
+    height: 16vw;
 }
 
 .ProCard a{
@@ -46,11 +48,14 @@
 
 .CardBtn{
     border: black 1px solid;
-    border-radius: 5px;
+    border-radius: 2px;
     background: none;
     margin: 10px;
     width: 90%;
+    height: 1.6rem;
     transition: 0.4s;
+    font-size: 12px;
+    
 }
 
 .CardBtn:hover{
