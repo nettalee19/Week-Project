@@ -9,25 +9,21 @@ function Products({makeup, addToCart}) {
 
     const [search, setSearch] = useState('')
 
+    // const [name, setName] = useState([]) //array of all names
+    // const [product_type, setProduct_type] = useState([]) //array of all names
+
     // const searchCat = ["name", "brand", "category", "product_type"]
     
     return (
         <div>
-            {/* <SearchByCat/> */}
-            {/* <SearchByCat makeup={makeup}/> */}
-            All Products
+
+            {/* <button onClick={this.}></button> */}
             <select name="" id=""></select>
             <input type="text" placeholder="Search by name" onChange={event => { setSearch(event.target.value)}}/>
             
 
             {makeup.filter((product) =>{
                 return product.name.toLowerCase().includes(search.toLowerCase())
-                // if(search === ''){
-                //     return product;
-                // }
-                // else if(product.name.toLowerCase().includes(search)){
-                //     return product;
-                // }
                 
             }).map((product) =>{
                     return <ProductCard className="ProductCard"

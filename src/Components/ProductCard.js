@@ -22,7 +22,7 @@ function Product_cube({product, addToCart}) { //name, brand, price
                 })} */}
             
                 <Link to={`/selectedItem`} product={product}>
-                
+                    
                     {/* <img src={product.image_link} alt=""/>  */}
                     <p>{product.brand}</p>
                     <h4>{product.name}</h4>

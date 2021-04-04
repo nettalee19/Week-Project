@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link, useLocation} from 'react-router-dom'
+import "./Header.css"
 
 // import SearchByCat from '../SearchByCat/SearchByCat';
 
@@ -7,20 +8,24 @@ const Header = ({countCartItems}) => {
     const location = useLocation();
     
     return (
-        <div>
+        <div className="Header">
             {/* <p>{left}</p>
             <p>{main}</p>
             <p>{right}</p> */}
-
+            <ul>
+                <li>Smash</li>
+                
+            
             
 
-            {location.pathname === '/' ? (
+            <li>{location.pathname === '/' ? (
             <Link to={`/cart`}>
-                Cart {' '}
+                <p><i class="fas fa-shopping-cart"></i>{' '}</p>
                 {countCartItems? (//if it exists and is no zero
-                    <button>{countCartItems}</button>
+                    <button class="countBtn">{countCartItems}</button>
                 ): ('')} 
-            </Link>) : null}
+            </Link>) : null}</li>
+            </ul>
         </div>
     )
 }

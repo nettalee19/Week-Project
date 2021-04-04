@@ -1,0 +1,21 @@
+.Header{
+    background: cornflowerblue;
+    height: 10vh;
+}
+.countBtn{
+    background: rgb(248, 0, 0);
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    /* font-size: 10px; */
+}
+
+.fa-shopping-cart{
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
