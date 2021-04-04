@@ -17,6 +17,7 @@ const Header = ({countCartItems}) => {
                 <li>Shop by Category</li>
                 <li>Mascaras</li>
                 <li>Face</li>
+                <li>Night time</li>
                 
             
             

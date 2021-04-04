@@ -21,17 +21,20 @@ function Products({makeup, addToCart}) {
             <select name="" id=""></select>
             <input type="text" placeholder="Search by name" onChange={event => { setSearch(event.target.value)}}/>
             
+            <div className="Product">
+                {makeup.filter((product) =>{
+                    return product.name.toLowerCase().includes(search.toLowerCase())
+                    
+                }).map((product) =>{
+                        return <ProductCard className="ProductCard"
+                        key={product.id}
+                        product={product}
+                        addToCart={addToCart}
+                        />
+                })}
 
-            {makeup.filter((product) =>{
-                return product.name.toLowerCase().includes(search.toLowerCase())
-                
-            }).map((product) =>{
-                    return <ProductCard className="ProductCard"
-                    key={product.id}
-                    product={product}
-                    addToCart={addToCart}
-                    />
-            })}
+            </div>
+
 
 
             

@@ -1,4 +1,10 @@
-
+.Product{
+    /* display: flex;
+    justify-content: center; */
+    display: grid;
+    /* grid-template-columns: 20rem 20rem 20rem 20rem; */
+    grid-template-columns: repeat(4, 20rem [col-start]);
+}
 .ProductCard{
     /* display: flex;
     justify-content: center; */
