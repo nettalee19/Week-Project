@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import axios from "axios"
+// import axios from "axios"
 import {BrowserRouter, Switch, Route} from 'react-router-dom' //Route
 import "./Style/Style.css"
 
@@ -17,7 +17,7 @@ import data2 from "./data"
 import SelectedItem from "./SelectedItem"
 
 
-const proxy = 'https://api.allorigins.win/raw?url=';
+// const proxy = 'https://api.allorigins.win/raw?url=';
 // 'https://api.codetabs.com/v1/proxy/?quest=';
 
 
@@ -127,21 +127,3 @@ export default function Homepage() {
     )
 }
 
-// const getCart = async() =>{
-    //     const cartData = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json`)
-        
-    //     setcartItems(cartData)
-    // }
-
-
-    {/* {makeup == null} ? <h1>Loading...</h1> : <Products makeup={makeup}/> */}
-
-                {/* {makeup.map((product, index) =>{
-                    return <ProductCard
-                    key = {index}
-                    name = {product.name}
-                    barnd = {product.brand}
-                    price = {product.price}
-                    />
-                })}
-                 */}

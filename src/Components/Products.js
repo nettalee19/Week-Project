@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 // import axios from "axios"
 import ProductCard from "./ProductCard"
 // import SearchByCat from './SearchByCat';
@@ -21,7 +21,7 @@ function Products({makeup, addToCart}) {
             
 
             {makeup.filter((product) =>{
-                if(search == ''){
+                if(search === ''){
                     return product
                 }
                 else if(product.name.toLowerCase().includes(search)){
