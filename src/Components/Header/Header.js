@@ -20,7 +20,7 @@ const Header = ({countCartItems}) => {
 
             <li>{location.pathname === '/' ? (
             <Link to={`/cart`}>
-                <p><i class="fas fa-shopping-cart"></i>{' '}</p>
+                <p><i className="fas fa-shopping-cart"></i>{' '}</p>
                 {countCartItems? (//if it exists and is no zero
                     <button class="countBtn">{countCartItems}</button>
                 ): ('')} 
