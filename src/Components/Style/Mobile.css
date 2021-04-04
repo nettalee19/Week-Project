@@ -6,7 +6,7 @@
         flex-direction: column;
         justify-content: center; */
         display: grid;
-        grid-template-columns: repeat(2, 16rem);
+        grid-template-columns: repeat(2, 13rem);
     }
     .ProCard{
         width: 70%;
@@ -19,7 +19,8 @@
     }
 }
 
-@media(min-width: 501px) and (max-width: 768px){
+@media(min-width: 501px) and (max-width: 800px){ 
+    /* 768 */
     .Product{
         /* display: flex;
         flex-direction: column;
