@@ -6,7 +6,7 @@ import "./Style/Mobile.css"
 
 import Header from "./Header/Header"
 // import HeaderCat from "./Header/HeaderCat"
-// import MainContent from "./MainContent"
+import MainContent from "./MainContent"
 import Products from './Products'
 import Cart from './Cart/Cart'
 import Checkout from './Checkout Form/Checkout/Checkout'
@@ -75,15 +75,15 @@ export default function Homepage() {
     
     return (
         <BrowserRouter>
-            <div>
-                <Header 
+            <div className="Mainpage">
+                <Header className="Header"
                 countCartItems= {cartItems.length}
                 // left={`choose country`}
                 // main = {`Sign up now to get more deals`}
                 // right = {`Help`}
                 />
 
-                {/* <MainContent headercat/> */}
+                <MainContent/>
                 <Switch>
                     <Route exact path="/">
                         <Products 

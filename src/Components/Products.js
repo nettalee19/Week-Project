@@ -18,8 +18,11 @@ function Products({makeup, addToCart}) {
         <div>
 
             {/* <button onClick={this.}></button> */}
-            <select name="" id=""></select>
-            <input type="text" placeholder="Search by name" onChange={event => { setSearch(event.target.value)}}/>
+            <div className="Search">
+
+            {/* <select name="" id=""></select> */}
+                <input type="text" className="productSearchbar" placeholder="Search product by name" onChange={event => { setSearch(event.target.value)}}/>
+            </div>
             
             <div className="Product">
                 {makeup.filter((product) =>{

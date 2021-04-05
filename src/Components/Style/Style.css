@@ -1,3 +1,7 @@
+.Mainpage{
+    position: relative;
+}
+
 .Product{
     /* display: flex;
     justify-content: center; */
@@ -27,8 +31,39 @@
 }
 
 .ProCard p{
+    font-size: 11px;
     color: grey;
     font-weight: 700;
+}
+
+
+
+
+.Search{
+    display: flex;
+    justify-content: center;
+}
+
+.productSearchbar{
+    margin: 10px;
+    /* display: flex; */
+    /* width: 50rem; */
+    width: 200px;
+    /* box-sizing: border-box; */
+    height: 2rem;
+    font-size: 16px;
+    background: rgba(211, 211, 211, 0.356);
+    border-radius: 4px;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid red;
+}
+.productSearchbar:focus{
+    background-color: rgba(173, 216, 230, 0.342);
+    border: 3px solid #555;
+    width: 60%;
 }
 
 .ProCard img{
@@ -75,6 +110,18 @@
     display: flex;
     flex-direction: row;
 } */
+
+
+
+
+
+
+
+
+
+
+
+
 
 .block{
     background-color: #e0e0e0;

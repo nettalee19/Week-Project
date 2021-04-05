@@ -26,7 +26,7 @@ function Product_cube({product, addToCart}) { //name, brand, price
                     {/* <img src={product.image_link} alt=""/>  */}
                     <p>{product.brand}</p>
                     <h4>{product.name}</h4>
-                    <h5>{product.price}{product.price_sign}</h5>
+                    <h5>${product.price}</h5>
                     
                 </Link>
                
