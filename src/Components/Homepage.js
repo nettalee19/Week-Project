@@ -9,13 +9,14 @@ import Header from "./Header/Header"
 import MainContent from "./MainContent"
 import Products from './Products'
 import Cart from './Cart/Cart'
-import Checkout from './Checkout Form/Checkout/Checkout'
+import Checkout from './Checkout/Checkout'
 
 // import ProductCard from "./ProductCard"
 // import Footer from "./Footer"
 // import data2 from "./data2"
 import data2 from "./data"
 import SelectedItem from "./SelectedItem"
+import AddressForm from './Checkout/AddressForm'
 
 
 // const proxy = 'https://api.allorigins.win/raw?url=';
@@ -83,9 +84,12 @@ export default function Homepage() {
                 // right = {`Help`}
                 />
 
-                <MainContent/>
+                
                 <Switch>
                     <Route exact path="/">
+                        <MainContent 
+                        />
+
                         <Products 
                         makeup={makeup} 
                         addToCart={addToCart}
@@ -103,6 +107,13 @@ export default function Homepage() {
 
                     <Route exact path="/checkout">
                         <Checkout 
+                        // cart={cart}
+                        />
+
+                    </Route>
+
+                    <Route exact path="/addressform">
+                        <AddressForm 
                         // cart={cart}
                         />
 

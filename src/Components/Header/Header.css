@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
 
 
 .Header{
     background: cornflowerblue;
     height: 3.6rem;
     /* font-family: 'Dela Gothic One', cursive; */
-    font-family: 'Anton', sans-serif;
-    font-weight: 100;
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Lato', sans-serif;
     position: sticky;
     top: 0;
     left: 0;
