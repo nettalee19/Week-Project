@@ -133,7 +133,7 @@
 }
 
 .checkout-steps > div.active{
-    border-top: #ec649d;
+    border-top:  0.4rem #ec649d solid;
     color: #ec649d ;
     
 }

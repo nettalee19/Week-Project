@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import SignIn from "./SignIn.js"
 
 export default function Checkout(props) {
     return (
@@ -8,6 +10,14 @@ export default function Checkout(props) {
             <div className={props.step2 ? "active": ''}>Shipping</div>
             <div className={props.step3 ? "active": ''}>Payment</div>
             <div className={props.step4 ? "active": ''}>Place Order</div>
+
+            {/* <SignIn/>
+
+            <div>
+            <Link to="/addressform">
+                Continue for Shipping Form >>
+            </Link>
+            </div> */}
         </div>
     )
 }

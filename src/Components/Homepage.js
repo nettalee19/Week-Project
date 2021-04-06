@@ -11,12 +11,14 @@ import Products from './Products'
 import Cart from './Cart/Cart'
 import Checkout from './Checkout/Checkout'
 
-// import ProductCard from "./ProductCard"
+import ProductCard from "./ProductCard"
 // import Footer from "./Footer"
 // import data2 from "./data2"
 import data2 from "./data"
 import SelectedItem from "./SelectedItem"
 import AddressForm from './Checkout/AddressForm'
+import PaymentForm from './Checkout/PaymentForm'
+import PlaceOrder from './Checkout/PlaceOrder'
 
 
 // const proxy = 'https://api.allorigins.win/raw?url=';
@@ -77,13 +79,7 @@ export default function Homepage() {
     return (
         <BrowserRouter>
             <div className="Mainpage">
-                <Header className="Header"
-                countCartItems= {cartItems.length}
-                // left={`choose country`}
-                // main = {`Sign up now to get more deals`}
-                // right = {`Help`}
-                />
-
+                <Header className="Header" countCartItems= {cartItems.length} />
                 
                 <Switch>
                     <Route exact path="/">
@@ -96,6 +92,11 @@ export default function Homepage() {
                         className="Prod"/>
                         
                     </Route>
+
+                    <Route exact path="/Products/:id" component={ProductCard}/> 
+                        
+                    
+                    
                     <Route exact path="/cart">
                         <Cart 
                         cartItems = {cartItems} 
@@ -115,6 +116,20 @@ export default function Homepage() {
                     <Route exact path="/addressform">
                         <AddressForm 
                         // cart={cart}
+                        />
+
+                    </Route>
+
+                    <Route exact path="/paymentform">
+                        <PaymentForm 
+                        
+                        />
+
+                    </Route>
+
+                    <Route exact path="/placeorder">
+                        <PlaceOrder 
+                        
                         />
 
                     </Route>

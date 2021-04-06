@@ -1,7 +1,9 @@
 
 import React, { useState } from 'react'
+import {BrowserRouter, Link} from 'react-router-dom'
+import ProductCard from './ProductCard'
 // import axios from "axios"
-import ProductCard from "./ProductCard"
+
 // import SearchByCat from './SearchByCat';
 // import SearchByCat from './SearchByCat/SearchByCat';
 
@@ -24,19 +26,28 @@ function Products({makeup, addToCart}) {
                 <input type="text" className="productSearchbar" placeholder="Search product by name" onChange={event => { setSearch(event.target.value)}}/>
             </div>
             
-            <div className="Product">
-                {makeup.filter((product) =>{
-                    return product.name.toLowerCase().includes(search.toLowerCase())
-                    
-                }).map((product) =>{
-                        return <ProductCard className="ProductCard"
-                        key={product.id}
-                        product={product}
-                        addToCart={addToCart}
-                        />
-                })}
+                <div className="Product">
+                    {makeup.filter((product) =>{
+                        return product.name.toLowerCase().includes(search.toLowerCase())
+                        
+                    }).map((product) =>{
+                            return <div>
+                                    <ProductCard className="ProductCard"
+                                        key={product.id}
+                                        product={product}
+                                        addToCart={addToCart}/>
+                                    </div>
 
-            </div>
+                            // <div key={product.id}>
+                                
+                            //     <Link to={`/Prodcuts/${product.id}`}  >
+                            
+                            
+                            // {product.name}</Link></div>
+                    })}
+
+                </div>
+            
 
 
 
@@ -46,10 +57,3 @@ function Products({makeup, addToCart}) {
 }
 
 export default Products
-/* {makeup.map((product) =>{
-                    return <ProductCard className="ProductCard"
-                    key={product.id}
-                    product={product}
-                    addToCart={addToCart}
-                    />
-            })} */
