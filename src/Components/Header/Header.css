@@ -15,9 +15,11 @@
     left: 0;
 }
 
-.headerImg{
-    background-image: url("../Style/navbar.gif") no-repeat center center/cover;
-    
+
+.Header img{
+    /* background-image: url("../Style/navbar.gif") no-repeat center center/cover; */
+    height: 3.2rem;
+    width: 6.8rem;
     
 }
 

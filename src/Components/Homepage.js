@@ -22,7 +22,8 @@ import ProductPage from './ProductPage'
 
 
 // const proxy = 'https://api.allorigins.win/raw?url=';
-// const proxy ='https://api.codetabs.com/v1/proxy/?quest=';
+const proxy ='https://api.codetabs.com/v1/proxy/?quest=';
+
 
 
 
@@ -31,16 +32,30 @@ export default function Homepage() {
     const [makeup, setMakeup] = useState([])
     const [cartItems, setCartItems] = useState([])
     
+    
     const makeupApi = async () =>{
-        // const response = await axios.get(`${proxy}http://makeup-api.herokuapp.com/api/v1/products.json/`)
+        // const response = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json/`)
         // setMakeup(response.data)
+
+        const response = await axios.get(`https://605c7a146d85de00170da501.mockapi.io/api/paper/Smash`)
+        setMakeup(response.data)
+        // const response = data;
+        // setMakeup(response)
+        
         // console.log(response.data)
-        const response = data;
-        console.log(response)
-        setMakeup(response)
+
+        // console.log(response)
     }
+
+    useEffect(() =>{
+        makeupApi()
+        
+    }, [])
+
+    console.log(makeup)
     
-    
+    // console.log(makeup)
+   
     
     const addToCart = ((product) =>{
         const exist = cartItems.find((item) =>item.id === product.id)
@@ -54,6 +69,7 @@ export default function Homepage() {
             else{//is not in the cart
                 setCartItems([...cartItems, {...product, qty: 1}])
             }
+            
         })
         
         const removeFromCart = (product) =>{
@@ -66,13 +82,11 @@ export default function Homepage() {
                     cartItems.map((item) =>
                     item.id === product.id ? {...exist, qty: exist.qty -1}: item //update the qty
                     ))
-                }
             }
+        }
+        console.log(cartItems)
             
-            useEffect(() =>{
-                makeupApi()
-                
-            }, [])
+        
             
             
             
@@ -92,11 +106,17 @@ export default function Homepage() {
                         addToCart={addToCart}
                         className="Prod"/>
                         
-                    <Route exact path="/:id" component={ProductPage}/> 
+                        {/* <Route exact path="/:id" component={()=><ProductPage allProducts={makeup}/>}/>  */}
+                    
                     </Route>
+                    {/* <Route exact path="/:id/:Ilovu" component={()=><ProductPage allProducts={makeup}/>}/>  */}
+                    <Route path="/ProductPage/:id" component={()=><ProductPage allProducts={makeup}/>}/> 
+
+                    {/* <Route exact path="/ProductPage/:id" component={ProductPage} /> */}
 
                     <Route exact path="/cart">
                         <Cart 
+                        x = {"123"}
                         cartItems = {cartItems} 
                         addToCart={addToCart}
                         removeFromCart = {removeFromCart}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' 
 import {Link} from 'react-router-dom'
 // import SelectedItem from './SelectedItem'
 
@@ -6,17 +6,19 @@ import {Link} from 'react-router-dom'
 // import {AddShoppingCart} from '@material-ui/icon'
 
 function Product_cube({product, addToCart}) { //name, brand, price
-    // console.log(product)
+  
     
     return (
         <div>
             
                 <div className="ProCard">
                     <div key={product.id}>
+
                     
-                        <Link to={`/${product.id}`} product={product} key={product.id}>
+                        {/* <Link to={`/${product.id}/${"some_text"}`} product={product} key={product.id}> */}
+                        <Link to={`ProductPage/${product.id}` } params={product}  key={product.id}>
                             
-                            {/* <img src={product.image_link} alt=""/>  */}
+                            <img src={product.imageLink} alt="ne"/> 
                             <p >{product.brand}</p>
                             <h4>{product.name}</h4>
                             <h5>${product.price}</h5>

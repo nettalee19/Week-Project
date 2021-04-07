@@ -112,9 +112,32 @@
     
 }
 
+
+/*product page*/
+.productPage{
+    display: flex;
+}
+
+.productPage img{
+   width: 400px;
+}
+
+.productPage button{
+   width: 120px;
+}
+
+/*cart*/
+.cartPage{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
 .Cart{
     background: grey;
     /* display: flex; */
+    width: 50vw;
+    
     
 }
 
@@ -123,7 +146,9 @@
     flex-direction: row;
 } */
 
-
+.shipping-charge{
+    font-size: 10px;
+}
 
 /*Checkout*/
 .checkout-steps > div{
@@ -182,6 +207,7 @@
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 0.5rem;
+  
 }
 
 .row{
