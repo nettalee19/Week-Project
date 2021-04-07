@@ -16,7 +16,7 @@ function Product_cube({product, addToCart}) { //name, brand, price
                     
                         <Link to={`/${product.id}`} product={product} key={product.id}>
                             
-                            <img src={product.image_link} alt=""/> 
+                            {/* <img src={product.image_link} alt=""/>  */}
                             <p >{product.brand}</p>
                             <h4>{product.name}</h4>
                             <h5>${product.price}</h5>
