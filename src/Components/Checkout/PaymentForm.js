@@ -1,11 +1,15 @@
 import React from 'react'
 import Checkout from './Checkout'
+import AddressForm from './Checkout'
 import {Link} from 'react-router-dom'
+import { useState } from 'react'
+
 
 export default function PaymentForm() {
-    
-    const submitHandler = () =>{
-        console.log('hello')
+    const [payment, setPayment] = useState('Paypal') 
+
+    const submitHandler = (e) =>{
+        e.preventDefault()
     }
 
     const setPaymentMethod = () =>{
@@ -14,10 +18,14 @@ export default function PaymentForm() {
     return (
         <div>
             <Checkout step1 step2 step3/>
+            
+            <Link to="/addressform">
+                    Back to Shipping details 
+            </Link>
 
-            <form className="form" onSubmit={submitHandler}>
+            <form className="addressform" onSubmit={submitHandler}>
                 <div>
-                    <h2>Payment</h2>
+                    <h2>Payment Method</h2>
                 </div>
                 <div>
                     <div>

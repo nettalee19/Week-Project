@@ -1,10 +1,13 @@
 import React from 'react'
+import image from "./Style/back.jpg"
 
 function MainContent() {
     return (
         <div>
-            
-            <img src="./Style/backg.png}" alt="" width="500" height="600"/>
+            <div className="mainPhoto">
+                <img src={image} alt="" width="1290" height="380"/>
+
+            </div>
         
         </div>
     )

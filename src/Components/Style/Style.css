@@ -25,7 +25,7 @@
 .ProCard{
     
     width: 20vw;
-    height: 12rem;
+    height: 80vh;
     margin: 15px;
     text-align: center;
     /* border: black 1px solid;
@@ -61,6 +61,7 @@
     /* box-sizing: border-box; */
     height: 2rem;
     font-size: 16px;
+    /* background: rgba(211, 211, 211, 0.356); */
     background: rgba(211, 211, 211, 0.356);
     border-radius: 4px;
     transition: width 0.4s ease-in-out;
@@ -70,7 +71,8 @@
     border-bottom: 2px solid red;
 }
 .productSearchbar:focus{
-    background-color: rgba(173, 216, 230, 0.342);
+    /* background-color: rgba(173, 216, 230, 0.342); */
+    background-color: lightgoldenrodyellow;
     border: 3px solid #555;
     width: 60%;
 }
@@ -139,10 +141,38 @@
 }
 
 
+.addressform{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.addressform-section{
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+.addressform-section label{
+    margin-right: 7px;
+}
+.addressform-section select{
+    outline: #ec649d 2px solid;
+}
+
+.addressform-section input{
+    border: none;
+    border-bottom: #ec649d 2px solid;
+    
+}
+.addressform-section input:focus{
+    outline: none;
+}
 
 
-
-
+/*Main content*/
+/* .logo{
+    background-image: url('./Style/Untitled.jpg');
+} */
 
 
 

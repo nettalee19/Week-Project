@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 // import SelectedItem from './SelectedItem'
 
 // import {Card, CardMedia, CardContect, CardActions, Typography, IconButton} from '@material-ui/core'
@@ -12,12 +12,12 @@ function Product_cube({product, addToCart}) { //name, brand, price
         <div>
             
                 <div className="ProCard">
-                    <div>
+                    <div key={product.id}>
                     
-                        <Link to={`/Prodcuts/${product.id}`} product={product} key={product.id}>
+                        <Link to={`/${product.id}`} product={product} key={product.id}>
                             
-                            {/* <img src={product.image_link} alt=""/>  */}
-                            <p>{product.brand}</p>
+                            <img src={product.image_link} alt=""/> 
+                            <p >{product.brand}</p>
                             <h4>{product.name}</h4>
                             <h5>${product.price}</h5>
                             

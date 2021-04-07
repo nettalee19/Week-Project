@@ -1,6 +1,4 @@
-
 import React, { useState } from 'react'
-import {BrowserRouter, Link} from 'react-router-dom'
 import ProductCard from './ProductCard'
 // import axios from "axios"
 
@@ -31,7 +29,7 @@ function Products({makeup, addToCart}) {
                         return product.name.toLowerCase().includes(search.toLowerCase())
                         
                     }).map((product) =>{
-                            return <div>
+                            return <div key={product.id}>
                                     <ProductCard className="ProductCard"
                                         key={product.id}
                                         product={product}

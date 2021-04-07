@@ -4,7 +4,8 @@
 
 
 .Header{
-    background: cornflowerblue;
+    /* background: cornflowerblue; */
+    background: #9DE6FA;
     height: 3.6rem;
     /* font-family: 'Dela Gothic One', cursive; */
     /* font-family: 'Anton', sans-serif; */
@@ -12,6 +13,12 @@
     position: sticky;
     top: 0;
     left: 0;
+}
+
+.headerImg{
+    background-image: url("../Style/navbar.gif") no-repeat center center/cover;
+    
+    
 }
 
 i{

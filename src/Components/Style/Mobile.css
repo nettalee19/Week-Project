@@ -17,6 +17,9 @@
         border-radius: 10px;
         
     }
+    .mainPhoto{
+
+    }
 }
 
 @media(min-width: 501px) and (max-width: 800px){ 

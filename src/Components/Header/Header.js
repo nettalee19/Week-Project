@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, useLocation} from 'react-router-dom'
 import "./Header.css"
+// import navbar from "./Style/navbar.jpg"
 
 // import SearchByCat from '../SearchByCat/SearchByCat';
 
@@ -13,7 +14,7 @@ const Header = ({countCartItems}) => {
             <p>{main}</p>
             <p>{right}</p> */}
             <ul>
-                <li>Smash</li>
+                <li className="headerImg">.</li>
                 <li>Shop by Category</li>
                 <li>Mascaras</li>
                 <li>Face</li>

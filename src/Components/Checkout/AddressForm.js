@@ -1,16 +1,19 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Checkout from './Checkout'
 import {Link, Route} from 'react-router-dom'
-// import axios from 'axios'
+import axios from 'axios'
 // import Checkout from "../Checkout/Checkout"
-// const country = 'https://restcountries.herokuapp.com/api/v1/region/';
-// const proxy = 'https://api.allorigins.win/raw?url';
+const countries = 'https://restcountries.eu/rest/v2/all';
+// const countries = 'https://api.allorigins.win/raw?url';
+// const = 'https://api.allorigins.win/raw?url';
+// const proxy1 = 'https://api.codetabs.com/v1/proxy/?quest=';
 
 export default function AddressForm() {
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [address1, setAddress1] = useState('')
     const [city, setCity] = useState('')
+    const [country, setCountry] = useState('')
     const [email, setEmail] = useState('')
     const [ZIP, setZIP] = useState('')
 
@@ -18,33 +21,57 @@ export default function AddressForm() {
         e.preventDeafault()
     }
 
+    const getCountries = async () =>{
+        const response = await axios.get(`${countries}`)
+        
+        //response.data
+        // console.log(response)
+        setCountry(response.data)
+        console.log(response.data)
+        
+    }
+
+    useEffect(() =>{
+        getCountries()
+    }, [])
+    
+
 
     return (
-        <div>
+        <div >
             <Checkout step1 step2 className=""/>
-            <form className="form" action="" onSubmit={sumbitHandler}>
+            <form className="addressform" action="" onSubmit={sumbitHandler}>
                 <h2>Shipping Address:</h2>
-                <div>
+                <div className="addressform-section">
                     <label>First Name:</label>
                      <input type="text" placeholder="First Name" id="firstName" name='firstName' onChange={(e) =>setFirstName(e.target.value)} required></input>
                 </div>
-                <div>
+                <div className="addressform-section">
                     <label>Last Name:</label>
                      <input type="text" placeholder="Last Name" id="lastName" name='lastName' onChange={(e) =>setLastName(e.target.value)} required></input>
                 </div>
-                <div>
+                <div className="addressform-section">
                     <label>Email:</label>
                      <input type="email" placeholder="Email" id="email" name='email' onChange={(e) =>setEmail(e.target.value)} required></input>
                 </div>
-                <div>
+                <div className="addressform-section">
                     <label>Address1:</label>
                      <input type="text" placeholder="Address1" id="address1" name='address1' onChange={(e) =>setAddress1(e.target.value)} required></input>
                 </div>
-                <div>
+                <div className="addressform-section">
                     <label>City:</label>
                      <input type="text" placeholder="City" id="city" name='city' onChange={(e) =>setCity(e.target.value)} required></input>
                 </div>
-                <div>
+                <div className="addressform-section">
+                    <label>Country:</label>
+                    {/* <select name="c" id="c">
+                        {country.map((c) =>{
+                            return <option value={c.name}>{c.name}</option>
+                            
+                        })}
+                    </select> */}
+                </div>
+                <div className="addressform-section">
                     <label>ZIP:</label>
                     <input type="email" placeholder="ZIP" id="zip" name='zip' onChange={(e) =>setZIP(e.target.value)} required></input>
                 </div>
@@ -59,3 +86,14 @@ export default function AddressForm() {
         </div>
     )
 }
+
+// if(c.name="United States of America"){
+                            //     <div>
+                            //         <label>City:</label>
+                            //         <input type="text" placeholder="City" id="city" name='city' onChange={(e) =>setCity(e.target.value)} required></input>
+                            //     </div>
+                            // }
+                            // else{
+                            //     return <option value={c.name}>{c.name}</option>
+
+                            // }
