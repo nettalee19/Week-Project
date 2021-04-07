@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import ProductCard from './ProductCard'
-// import axios from "axios"
 
-// import SearchByCat from './SearchByCat';
-// import SearchByCat from './SearchByCat/SearchByCat';
 
 function Products({makeup, addToCart}) {
 
@@ -28,15 +25,6 @@ function Products({makeup, addToCart}) {
                                         product={product}
                                         addToCart={addToCart}/>
                                     </div>
-
-                        
-
-                            // <div key={product.id}>
-                                
-                            //     <Link to={`/Prodcuts/${product.id}`}  >
-                            
-                            
-                            // {product.name}</Link></div>
                     })}
 
                 </div>

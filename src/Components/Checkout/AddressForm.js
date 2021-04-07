@@ -2,11 +2,9 @@ import React, {useState, useEffect} from 'react'
 import Checkout from './Checkout'
 import {Link, Route} from 'react-router-dom'
 import axios from 'axios'
-// import Checkout from "../Checkout/Checkout"
+
 const countries = 'https://restcountries.eu/rest/v2/all';
-// const countries = 'https://api.allorigins.win/raw?url';
-// const = 'https://api.allorigins.win/raw?url';
-// const proxy1 = 'https://api.codetabs.com/v1/proxy/?quest=';
+
 
 export default function AddressForm() {
     const [firstName, setFirstName] = useState('')
@@ -24,8 +22,7 @@ export default function AddressForm() {
     const getCountries = async () =>{
         const response = await axios.get(`${countries}`)
         
-        //response.data
-        // console.log(response)
+       
         setCountry(response.data)
         console.log(response.data)
         
@@ -41,6 +38,9 @@ export default function AddressForm() {
         <div >
             <Checkout step1 step2 className=""/>
             <form className="addressform" action="" onSubmit={sumbitHandler}>
+                <Link to="/cart">
+                       Back to the cart
+                    </Link>
                 <h2>Shipping Address:</h2>
                 <div className="addressform-section">
                     <label>First Name:</label>
@@ -75,7 +75,7 @@ export default function AddressForm() {
                     <label>ZIP:</label>
                     <input type="email" placeholder="ZIP" id="zip" name='zip' onChange={(e) =>setZIP(e.target.value)} required></input>
                 </div>
-
+                    
                 <div>
                     <Link to="/paymentform">
                        Continue for Payment >>

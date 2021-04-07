@@ -1,11 +1,8 @@
 import React from 'react' 
 import {Link} from 'react-router-dom'
-// import SelectedItem from './SelectedItem'
 
-// import {Card, CardMedia, CardContect, CardActions, Typography, IconButton} from '@material-ui/core'
-// import {AddShoppingCart} from '@material-ui/icon'
 
-function Product_cube({product, addToCart}) { //name, brand, price
+function Product_cube({product, addToCart}) { 
   
     
     return (
@@ -13,9 +10,6 @@ function Product_cube({product, addToCart}) { //name, brand, price
             
                 <div className="ProCard">
                     <div key={product.id}>
-
-                    
-                        {/* <Link to={`/${product.id}/${"some_text"}`} product={product} key={product.id}> */}
                         <Link to={`ProductPage/${product.id}` } params={product}  key={product.id}>
                             
                             <img src={product.imageLink} alt="ne"/> 
@@ -28,9 +22,7 @@ function Product_cube({product, addToCart}) { //name, brand, price
                     </div>
                     <button className="CardBtn" onClick={() =>addToCart(product)}>Add to Cart</button><br></br>
                 </div>
-            
 
-            {/* <Link to="/">back to more Products!</Link> */}
 
         </div>
     )
@@ -38,13 +30,6 @@ function Product_cube({product, addToCart}) { //name, brand, price
 
 export default Product_cube
 
- {/* {product.map((item)=>{
-                        return <Link to={`/selectedItem`}
-                        key= {item.id}
-                        src={item.image_link}  
-                        brand= {item.brand}
-                        name= {item.name}
-                        price= {item.price} />
-                    })} */}
+
 
 

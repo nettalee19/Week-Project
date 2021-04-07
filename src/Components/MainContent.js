@@ -5,7 +5,8 @@ function MainContent() {
     return (
         <div>
             <div className="mainPhoto">
-                <img src={image} alt="" width="1290" height="380"/>
+                <img src={image} alt="main" />
+               
 
             </div>
         

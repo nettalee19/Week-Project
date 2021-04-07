@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 .Header{
-    /* background: cornflowerblue; */
     background: #9DE6FA;
     height: 3.6rem;
-    /* font-family: 'Dela Gothic One', cursive; */
-    /* font-family: 'Anton', sans-serif; */
     font-family: 'Lato', sans-serif;
     position: sticky;
     top: 0;
@@ -17,7 +19,6 @@
 
 
 .Header img{
-    /* background-image: url("../Style/navbar.gif") no-repeat center center/cover; */
     height: 3.2rem;
     width: 6.8rem;
     
@@ -29,9 +30,11 @@ i{
 .countBtn{
     background: rgb(248, 0, 0);
     border: none;
+    width: 1.1rem;
+    height: 1.1rem;
     border-radius: 50px;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 14px;
     position: absolute;
     right: 0.6rem;
     top: 0.7rem;
@@ -41,7 +44,7 @@ i{
     color: black;
     margin-right: 1.8rem;
     margin-top: 0.3rem;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 ul{

@@ -66,21 +66,14 @@ function Cart({x, cartItems, addToCart, removeFromCart}) {
                             <div className="col-2"><strong>Total</strong></div>
                             <div className="col-1 text-right"><strong>${totalPrice}</strong></div>
                         </div>
-                    <hr/><hr/>
-                    <Link to={`/checkout`} className="checkout row">
+                    <hr/>
+                    <Link to={`/addressform`} className="checkout row">
                     Checkout 
                     </Link>
                     </div>
                 ) : <></>}
 
-                {/* <hr/>
-                <Link to={`/checkout`} className="checkout row">
-                Checkout >>
-                </Link> */}
-
-                {/* {isEmpty ? <EmptyCart/> : <FilledCart/> } */}
-                {/* <input type="button" value="Checkout >>" />
-                <a href="#">Checkout >></a> */}
+                
             </div>
         </div>
     )

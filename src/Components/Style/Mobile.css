@@ -1,10 +1,7 @@
 @media(max-width: 500px){
 
-
+    
     .Product{
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
         display: grid;
         grid-template-columns: repeat(2, 13rem);
     }
@@ -13,21 +10,20 @@
         margin: 15px;
         padding: -10px;
         text-align: center;
-        border: black 1px solid;
-        border-radius: 10px;
+        height: 17rem;
         
     }
     .mainPhoto{
 
+    }
+    .Cart{
+        width: 85vw;
     }
 }
 
 @media(min-width: 501px) and (max-width: 800px){ 
     /* 768 */
     .Product{
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
         display: grid;
         grid-template-columns: repeat(3, 15rem);
     }

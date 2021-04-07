@@ -10,19 +10,16 @@ import Products from './Products'
 import Cart from './Cart/Cart'
 import Checkout from './Checkout/Checkout'
 
-// import ProductCard from "./ProductCard"
-// import Footer from "./Footer"
-
-import data from "./data"
 import SelectedItem from "./SelectedItem"
 import AddressForm from './Checkout/AddressForm'
 import PaymentForm from './Checkout/PaymentForm'
 import PlaceOrder from './Checkout/PlaceOrder'
 import ProductPage from './ProductPage'
+import SignIn from './Checkout/SignIn'
 
 
 // const proxy = 'https://api.allorigins.win/raw?url=';
-const proxy ='https://api.codetabs.com/v1/proxy/?quest=';
+//const proxy ='https://api.codetabs.com/v1/proxy/?quest=';
 
 
 
@@ -34,17 +31,11 @@ export default function Homepage() {
     
     
     const makeupApi = async () =>{
-        // const response = await axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json/`)
-        // setMakeup(response.data)
+        
 
         const response = await axios.get(`https://605c7a146d85de00170da501.mockapi.io/api/paper/Smash`)
         setMakeup(response.data)
-        // const response = data;
-        // setMakeup(response)
         
-        // console.log(response.data)
-
-        // console.log(response)
     }
 
     useEffect(() =>{
@@ -54,7 +45,7 @@ export default function Homepage() {
 
     console.log(makeup)
     
-    // console.log(makeup)
+    
    
     
     const addToCart = ((product) =>{
@@ -106,17 +97,16 @@ export default function Homepage() {
                         addToCart={addToCart}
                         className="Prod"/>
                         
-                        {/* <Route exact path="/:id" component={()=><ProductPage allProducts={makeup}/>}/>  */}
+                        
                     
                     </Route>
-                    {/* <Route exact path="/:id/:Ilovu" component={()=><ProductPage allProducts={makeup}/>}/>  */}
+                   
                     <Route path="/ProductPage/:id" component={()=><ProductPage allProducts={makeup}/>}/> 
 
-                    {/* <Route exact path="/ProductPage/:id" component={ProductPage} /> */}
+                  
 
                     <Route exact path="/cart">
                         <Cart 
-                        x = {"123"}
                         cartItems = {cartItems} 
                         addToCart={addToCart}
                         removeFromCart = {removeFromCart}
@@ -124,10 +114,12 @@ export default function Homepage() {
 
                     </Route>
 
-                    <Route exact path="/checkout">
-                        <Checkout 
+                    <Route exact path="/checkout" component={Checkout}>
                         
-                        />
+                    </Route>
+
+                    <Route exact path="/signin" component={SignIn}>
+                        
 
                     </Route>
 
@@ -166,7 +158,7 @@ export default function Homepage() {
 
                 
 
-                {/* <Footer/> */}
+                
             </div>
         </BrowserRouter>
     )

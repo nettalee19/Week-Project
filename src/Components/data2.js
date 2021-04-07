@@ -1,802 +1,402 @@
 [
-    {
-      "id": "1",
-      "name": "Lippie Pencil",
-      "brand": "colourpop",
-      "description": "description 1",
-      "image-link": "https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769",
-      "price": 48
-    },
-    {
-      "id": "2",
-      "name": "name 2",
-      "brand": "brand 2",
-      "description": "description 2",
-      "image-link": "https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769",
-      "price": 57
-    },
-    {
-      "id": "3",
-      "name": "name 3",
-      "brand": "brand 3",
-      "description": "description 3",
-      "image-link": "image-link 3",
-      "price": 63
-    },
-    {
-      "id": "4",
-      "name": "name 4",
-      "brand": "brand 4",
-      "description": "description 4",
-      "image-link": "image-link 4",
-      "price": 16
-    },
-    {
-      "id": "5",
-      "name": "name 5",
-      "brand": "brand 5",
-      "description": "description 5",
-      "image-link": "image-link 5",
-      "price": 43
-    },
-    {
-      "id": "6",
-      "name": "name 6",
-      "brand": "brand 6",
-      "description": "description 6",
-      "image-link": "image-link 6",
-      "price": 6
-    },
-    {
-      "id": "7",
-      "name": "name 7",
-      "brand": "brand 7",
-      "description": "description 7",
-      "image-link": "image-link 7",
-      "price": 3
-    },
-    {
-      "id": "8",
-      "name": "name 8",
-      "brand": "brand 8",
-      "description": "description 8",
-      "image-link": "image-link 8",
-      "price": 11
-    },
-    {
-      "id": "9",
-      "name": "name 9",
-      "brand": "brand 9",
-      "description": "description 9",
-      "image-link": "image-link 9",
-      "price": 59
-    },
-    {
-      "id": "10",
-      "name": "name 10",
-      "brand": "brand 10",
-      "description": "description 10",
-      "image-link": "image-link 10",
-      "price": 16
-    },
-    {
-      "id": "11",
-      "name": "name 11",
-      "brand": "brand 11",
-      "description": "description 11",
-      "image-link": "image-link 11",
-      "price": 41
-    },
-    {
-      "id": "12",
-      "name": "name 12",
-      "brand": "brand 12",
-      "description": "description 12",
-      "image-link": "image-link 12",
-      "price": 69
-    },
-    {
-      "id": "13",
-      "name": "name 13",
-      "brand": "brand 13",
-      "description": "description 13",
-      "image-link": "image-link 13",
-      "price": 75
-    },
-    {
-      "id": "14",
-      "name": "name 14",
-      "brand": "brand 14",
-      "description": "description 14",
-      "image-link": "image-link 14",
-      "price": 59
-    },
-    {
-      "id": "15",
-      "name": "name 15",
-      "brand": "brand 15",
-      "description": "description 15",
-      "image-link": "image-link 15",
-      "price": 85
-    },
-    {
-      "id": "16",
-      "name": "name 16",
-      "brand": "brand 16",
-      "description": "description 16",
-      "image-link": "image-link 16",
-      "price": 15
-    },
-    {
-      "id": "17",
-      "name": "name 17",
-      "brand": "brand 17",
-      "description": "description 17",
-      "image-link": "image-link 17",
-      "price": 29
-    },
-    {
-      "id": "18",
-      "name": "name 18",
-      "brand": "brand 18",
-      "description": "description 18",
-      "image-link": "image-link 18",
-      "price": 44
-    },
-    {
-      "id": "19",
-      "name": "name 19",
-      "brand": "brand 19",
-      "description": "description 19",
-      "image-link": "image-link 19",
-      "price": 13
-    },
-    {
-      "id": "20",
-      "name": "name 20",
-      "brand": "brand 20",
-      "description": "description 20",
-      "image-link": "image-link 20",
-      "price": 82
-    },
-    {
-      "id": "21",
-      "name": "name 21",
-      "brand": "brand 21",
-      "description": "description 21",
-      "image-link": "image-link 21",
-      "price": 76
-    },
-    {
-      "id": "22",
-      "name": "name 22",
-      "brand": "brand 22",
-      "description": "description 22",
-      "image-link": "image-link 22",
-      "price": 99
-    },
-    {
-      "id": "23",
-      "name": "name 23",
-      "brand": "brand 23",
-      "description": "description 23",
-      "image-link": "image-link 23",
-      "price": 95
-    },
-    {
-      "id": "24",
-      "name": "name 24",
-      "brand": "brand 24",
-      "description": "description 24",
-      "image-link": "image-link 24",
-      "price": 94
-    },
-    {
-      "id": "25",
-      "name": "name 25",
-      "brand": "brand 25",
-      "description": "description 25",
-      "image-link": "image-link 25",
-      "price": 39
-    },
-    {
-      "id": "26",
-      "name": "name 26",
-      "brand": "brand 26",
-      "description": "description 26",
-      "image-link": "image-link 26",
-      "price": 73
-    },
-    {
-      "id": "27",
-      "name": "name 27",
-      "brand": "brand 27",
-      "description": "description 27",
-      "image-link": "image-link 27",
-      "price": 74
-    },
-    {
-      "id": "28",
-      "name": "name 28",
-      "brand": "brand 28",
-      "description": "description 28",
-      "image-link": "image-link 28",
-      "price": 97
-    },
-    {
-      "id": "29",
-      "name": "name 29",
-      "brand": "brand 29",
-      "description": "description 29",
-      "image-link": "image-link 29",
-      "price": 38
-    },
-    {
-      "id": "30",
-      "name": "name 30",
-      "brand": "brand 30",
-      "description": "description 30",
-      "image-link": "image-link 30",
-      "price": 39
-    },
-    {
-      "id": "31",
-      "name": "name 31",
-      "brand": "brand 31",
-      "description": "description 31",
-      "image-link": "image-link 31",
-      "price": 55
-    },
-    {
-      "id": "32",
-      "name": "name 32",
-      "brand": "brand 32",
-      "description": "description 32",
-      "image-link": "image-link 32",
-      "price": 42
-    },
-    {
-      "id": "33",
-      "name": "name 33",
-      "brand": "brand 33",
-      "description": "description 33",
-      "image-link": "image-link 33",
-      "price": 50
-    },
-    {
-      "id": "34",
-      "name": "name 34",
-      "brand": "brand 34",
-      "description": "description 34",
-      "image-link": "image-link 34",
-      "price": 18
-    },
-    {
-      "id": "35",
-      "name": "name 35",
-      "brand": "brand 35",
-      "description": "description 35",
-      "image-link": "image-link 35",
-      "price": 83
-    },
-    {
-      "id": "36",
-      "name": "name 36",
-      "brand": "brand 36",
-      "description": "description 36",
-      "image-link": "image-link 36",
-      "price": 36
-    },
-    {
-      "id": "37",
-      "name": "name 37",
-      "brand": "brand 37",
-      "description": "description 37",
-      "image-link": "image-link 37",
-      "price": 25
-    },
-    {
-      "id": "38",
-      "name": "name 38",
-      "brand": "brand 38",
-      "description": "description 38",
-      "image-link": "image-link 38",
-      "price": 35
-    },
-    {
-      "id": "39",
-      "name": "name 39",
-      "brand": "brand 39",
-      "description": "description 39",
-      "image-link": "image-link 39",
-      "price": 62
-    },
-    {
-      "id": "40",
-      "name": "name 40",
-      "brand": "brand 40",
-      "description": "description 40",
-      "image-link": "image-link 40",
-      "price": 79
-    },
-    {
-      "id": "41",
-      "name": "name 41",
-      "brand": "brand 41",
-      "description": "description 41",
-      "image-link": "image-link 41",
-      "price": 82
-    },
-    {
-      "id": "42",
-      "name": "name 42",
-      "brand": "brand 42",
-      "description": "description 42",
-      "image-link": "image-link 42",
-      "price": 44
-    },
-    {
-      "id": "43",
-      "name": "name 43",
-      "brand": "brand 43",
-      "description": "description 43",
-      "image-link": "image-link 43",
-      "price": 29
-    },
-    {
-      "id": "44",
-      "name": "name 44",
-      "brand": "brand 44",
-      "description": "description 44",
-      "image-link": "image-link 44",
-      "price": 79
-    },
-    {
-      "id": "45",
-      "name": "name 45",
-      "brand": "brand 45",
-      "description": "description 45",
-      "image-link": "image-link 45",
-      "price": 15
-    },
-    {
-      "id": "46",
-      "name": "name 46",
-      "brand": "brand 46",
-      "description": "description 46",
-      "image-link": "image-link 46",
-      "price": 34
-    },
-    {
-      "id": "47",
-      "name": "name 47",
-      "brand": "brand 47",
-      "description": "description 47",
-      "image-link": "image-link 47",
-      "price": 4
-    },
-    {
-      "id": "48",
-      "name": "name 48",
-      "brand": "brand 48",
-      "description": "description 48",
-      "image-link": "image-link 48",
-      "price": 18
-    },
-    {
-      "id": "49",
-      "name": "name 49",
-      "brand": "brand 49",
-      "description": "description 49",
-      "image-link": "image-link 49",
-      "price": 2
-    },
-    {
-      "id": "50",
-      "name": "name 50",
-      "brand": "brand 50",
-      "description": "description 50",
-      "image-link": "image-link 50",
-      "price": 23
-    },
-    {
-      "id": "51",
-      "name": "name 51",
-      "brand": "brand 51",
-      "description": "description 51",
-      "image-link": "image-link 51",
-      "price": 35
-    },
-    {
-      "id": "52",
-      "name": "name 52",
-      "brand": "brand 52",
-      "description": "description 52",
-      "image-link": "image-link 52",
-      "price": 40
-    },
-    {
-      "id": "53",
-      "name": "name 53",
-      "brand": "brand 53",
-      "description": "description 53",
-      "image-link": "image-link 53",
-      "price": 62
-    },
-    {
-      "id": "54",
-      "name": "name 54",
-      "brand": "brand 54",
-      "description": "description 54",
-      "image-link": "image-link 54",
-      "price": 52
-    },
-    {
-      "id": "55",
-      "name": "name 55",
-      "brand": "brand 55",
-      "description": "description 55",
-      "image-link": "image-link 55",
-      "price": 18
-    },
-    {
-      "id": "56",
-      "name": "name 56",
-      "brand": "brand 56",
-      "description": "description 56",
-      "image-link": "image-link 56",
-      "price": 48
-    },
-    {
-      "id": "57",
-      "name": "name 57",
-      "brand": "brand 57",
-      "description": "description 57",
-      "image-link": "image-link 57",
-      "price": 64
-    },
-    {
-      "id": "58",
-      "name": "name 58",
-      "brand": "brand 58",
-      "description": "description 58",
-      "image-link": "image-link 58",
-      "price": 6
-    },
-    {
-      "id": "59",
-      "name": "name 59",
-      "brand": "brand 59",
-      "description": "description 59",
-      "image-link": "image-link 59",
-      "price": 74
-    },
-    {
-      "id": "60",
-      "name": "name 60",
-      "brand": "brand 60",
-      "description": "description 60",
-      "image-link": "image-link 60",
-      "price": 5
-    },
-    {
-      "id": "61",
-      "name": "name 61",
-      "brand": "brand 61",
-      "description": "description 61",
-      "image-link": "image-link 61",
-      "price": 52
-    },
-    {
-      "id": "62",
-      "name": "name 62",
-      "brand": "brand 62",
-      "description": "description 62",
-      "image-link": "image-link 62",
-      "price": 42
-    },
-    {
-      "id": "63",
-      "name": "name 63",
-      "brand": "brand 63",
-      "description": "description 63",
-      "image-link": "image-link 63",
-      "price": 8
-    },
-    {
-      "id": "64",
-      "name": "name 64",
-      "brand": "brand 64",
-      "description": "description 64",
-      "image-link": "image-link 64",
-      "price": 65
-    },
-    {
-      "id": "65",
-      "name": "name 65",
-      "brand": "brand 65",
-      "description": "description 65",
-      "image-link": "image-link 65",
-      "price": 76
-    },
-    {
-      "id": "66",
-      "name": "name 66",
-      "brand": "brand 66",
-      "description": "description 66",
-      "image-link": "image-link 66",
-      "price": 69
-    },
-    {
-      "id": "67",
-      "name": "name 67",
-      "brand": "brand 67",
-      "description": "description 67",
-      "image-link": "image-link 67",
-      "price": 79
-    },
-    {
-      "id": "68",
-      "name": "name 68",
-      "brand": "brand 68",
-      "description": "description 68",
-      "image-link": "image-link 68",
-      "price": 50
-    },
-    {
-      "id": "69",
-      "name": "name 69",
-      "brand": "brand 69",
-      "description": "description 69",
-      "image-link": "image-link 69",
-      "price": 40
-    },
-    {
-      "id": "70",
-      "name": "name 70",
-      "brand": "brand 70",
-      "description": "description 70",
-      "image-link": "image-link 70",
-      "price": 97
-    },
-    {
-      "id": "71",
-      "name": "name 71",
-      "brand": "brand 71",
-      "description": "description 71",
-      "image-link": "image-link 71",
-      "price": 24
-    },
-    {
-      "id": "72",
-      "name": "name 72",
-      "brand": "brand 72",
-      "description": "description 72",
-      "image-link": "image-link 72",
-      "price": 16
-    },
-    {
-      "id": "73",
-      "name": "name 73",
-      "brand": "brand 73",
-      "description": "description 73",
-      "image-link": "image-link 73",
-      "price": 52
-    },
-    {
-      "id": "74",
-      "name": "name 74",
-      "brand": "brand 74",
-      "description": "description 74",
-      "image-link": "image-link 74",
-      "price": 44
-    },
-    {
-      "id": "75",
-      "name": "name 75",
-      "brand": "brand 75",
-      "description": "description 75",
-      "image-link": "image-link 75",
-      "price": 81
-    },
-    {
-      "id": "76",
-      "name": "name 76",
-      "brand": "brand 76",
-      "description": "description 76",
-      "image-link": "image-link 76",
-      "price": 2
-    },
-    {
-      "id": "77",
-      "name": "name 77",
-      "brand": "brand 77",
-      "description": "description 77",
-      "image-link": "image-link 77",
-      "price": 90
-    },
-    {
-      "id": "78",
-      "name": "name 78",
-      "brand": "brand 78",
-      "description": "description 78",
-      "image-link": "image-link 78",
-      "price": 37
-    },
-    {
-      "id": "79",
-      "name": "name 79",
-      "brand": "brand 79",
-      "description": "description 79",
-      "image-link": "image-link 79",
-      "price": 80
-    },
-    {
-      "id": "80",
-      "name": "name 80",
-      "brand": "brand 80",
-      "description": "description 80",
-      "image-link": "image-link 80",
-      "price": 63
-    },
-    {
-      "id": "81",
-      "name": "name 81",
-      "brand": "brand 81",
-      "description": "description 81",
-      "image-link": "image-link 81",
-      "price": 9
-    },
-    {
-      "id": "82",
-      "name": "name 82",
-      "brand": "brand 82",
-      "description": "description 82",
-      "image-link": "image-link 82",
-      "price": 57
-    },
-    {
-      "id": "83",
-      "name": "name 83",
-      "brand": "brand 83",
-      "description": "description 83",
-      "image-link": "image-link 83",
-      "price": 44
-    },
-    {
-      "id": "84",
-      "name": "name 84",
-      "brand": "brand 84",
-      "description": "description 84",
-      "image-link": "image-link 84",
-      "price": 49
-    },
-    {
-      "id": "85",
-      "name": "name 85",
-      "brand": "brand 85",
-      "description": "description 85",
-      "image-link": "image-link 85",
-      "price": 71
-    },
-    {
-      "id": "86",
-      "name": "name 86",
-      "brand": "brand 86",
-      "description": "description 86",
-      "image-link": "image-link 86",
-      "price": 93
-    },
-    {
-      "id": "87",
-      "name": "name 87",
-      "brand": "brand 87",
-      "description": "description 87",
-      "image-link": "image-link 87",
-      "price": 44
-    },
-    {
-      "id": "88",
-      "name": "name 88",
-      "brand": "brand 88",
-      "description": "description 88",
-      "image-link": "image-link 88",
-      "price": 88
-    },
-    {
-      "id": "89",
-      "name": "name 89",
-      "brand": "brand 89",
-      "description": "description 89",
-      "image-link": "image-link 89",
-      "price": 59
-    },
-    {
-      "id": "90",
-      "name": "name 90",
-      "brand": "brand 90",
-      "description": "description 90",
-      "image-link": "image-link 90",
-      "price": 40
-    },
-    {
-      "id": "91",
-      "name": "name 91",
-      "brand": "brand 91",
-      "description": "description 91",
-      "image-link": "image-link 91",
-      "price": 42
-    },
-    {
-      "id": "92",
-      "name": "name 92",
-      "brand": "brand 92",
-      "description": "description 92",
-      "image-link": "image-link 92",
-      "price": 1
-    },
-    {
-      "id": "93",
-      "name": "name 93",
-      "brand": "brand 93",
-      "description": "description 93",
-      "image-link": "image-link 93",
-      "price": 79
-    },
-    {
-      "id": "94",
-      "name": "name 94",
-      "brand": "brand 94",
-      "description": "description 94",
-      "image-link": "image-link 94",
-      "price": 90
-    },
-    {
-      "id": "95",
-      "name": "name 95",
-      "brand": "brand 95",
-      "description": "description 95",
-      "image-link": "image-link 95",
-      "price": 3
-    },
-    {
-      "id": "96",
-      "name": "name 96",
-      "brand": "brand 96",
-      "description": "description 96",
-      "image-link": "image-link 96",
-      "price": 38
-    },
-    {
-      "id": "97",
-      "name": "name 97",
-      "brand": "brand 97",
-      "description": "description 97",
-      "image-link": "image-link 97",
-      "price": 23
-    },
-    {
-      "id": "98",
-      "name": "name 98",
-      "brand": "brand 98",
-      "description": "description 98",
-      "image-link": "image-link 98",
-      "price": 68
-    },
-    {
-      "id": "99",
-      "name": "name 99",
-      "brand": "brand 99",
-      "description": "description 99",
-      "image-link": "image-link 99",
-      "price": 47
-    },
-    {
-      "id": "100",
-      "name": "name 100",
-      "brand": "brand 100",
-      "description": "description 100",
-      "image-link": "image-link 100",
-      "price": 0
-    }
-  ]
+  {
+    "id": "1",
+    "brand": "colourpop",
+    "name": "Lippie Pencil",
+    "description":"Lippie Pencil A long-wearing and high-intensity lip pencil that glides on easily and prevents feathering. Many of our Lippie Stix have a coordinating Lippie Pencil designed to compliment it perfectly, but feel free to mix and match!",
+    "imageLink": "https://cdn.shopify.com/s/files/1/1338/0845/collections/lippie-pencil_grande.jpg?v=1512588769",
+    "price": 64
+  },
+  {
+    "id": "2",
+    "brand": "colourpop",
+    "name": "Blotted Lip",
+    "description": "Blotted Lip Sheer matte lipstick that creates the perfect popsicle pout! Formula is lightweight, matte and buildable for light to medium coverage.",
+    "imageLink": "https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076",
+    "price": 51
+  },
+  {
+    "id": "3",
+    "brand": "colourpop",
+    "name": "Lippie Stix",
+    "description": "Lippie Stix Formula contains Vitamin E, Mango, Avocado, and Shea butter for added comfort and moisture. None of our Lippie formulas contain any nasty ingredients like Parabens or Sulfates.",
+    "imageLink": "https://cdn.shopify.com/s/files/1/1338/0845/collections/blottedlip-lippie-stix_grande.jpg?v=1512588803",
+    "price": 90
+  },
+  {
+    "id": "4",
+    "brand": "colourpop",
+    "name": "No Filter Foundation",
+    "description": "Developed for the Selfie Age, our buildable full coverage, natural matte foundation delivers flawless looking skin from day-to-night. The oil-free, lightweight formula blends smoothly and is easily customizable to create the coverage you want. Build it up or sheer it out, it was developed with innovative soft-blurring pigments to deliver true color while looking and feeling natural. The lockable pump is easy to use and keeps your routine mess-free! As always, 100% cruelty-free and vegan.",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_6296_181x209.png",
+    "price": 20
+  },
+  {
+    "id": "5",
+    "brand": "boosh",
+    "name": "Lipstick",
+    "description": "description 5",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_6CM2_181x209.png",
+    "price": 17
+  },
+  {
+    "id": "6",
+    "brand": "deciem",
+    "name": "Serum Foundation",
+    "description": "description 6",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_647G_181x209.png",
+    "price": 90
+  },
+  {
+    "id": "7",
+    "brand": "deciem",
+    "name": "Coverage Foundation",
+    "description": "description 7",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_K2HW01_181x209.png",
+    "price": 76
+  },
+  {
+    "id": "8",
+    "brand": "zorah biocosmetiques",
+    "name": "Liquid Liner",
+    "description": "description 8",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/06/Zorah-Biocosmetiques-Liquid-Liner.png",
+    "price": 61
+  },
+  {
+    "id": "9",
+    "brand": "rejuva minerals",
+    "name": "Pressed Powder Foundation",
+    "description": "description 9",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/06/Rejuva-Minerals-Multi-Purpose-Powder-Eye-Shadow-Face-1.jpg",
+    "price": 83
+  },
+  {
+    "id": "10",
+    "brand": "zorah biocosmetiques",
+    "name": "Eyeshadow",
+    "description": "description 10",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/02/Ombre-Amazonie-CC.png",
+    "price": 82
+  },
+  {
+    "id": "11",
+    "brand": "rejuva minerals",
+    "name": "Bronzer - loose",
+    "description": "description 11",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/03/rejuva-minerals-bronzer.jpg",
+    "price": 17
+  },
+  {
+    "id": "12",
+    "brand": "penny lane organics",
+    "name": "Lip Gloss",
+    "description": "description 12",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/csm/sunset-bronze-pennylaneorganics1.jpg",
+    "price": 81
+  },
+  {
+    "id": "13",
+    "brand": "nudus",
+    "name": "Amalia",
+    "description": "named after my beautiful mum, delicately pink that displays sophistication. a perfect sheer wash of gorgeous colour that brings a new texture to the lip euphoria range.",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/06/Nudus-Amalia.jpg",
+    "price": 18
+  },
+  {
+    "id": "14",
+    "brand": "marienatie",
+    "name": "Pressed Foundation",
+    "description": "named after my beautiful mum, delicately pink that displays sophistication. a perfect sheer wash of gorgeous colour that brings a new texture to the lip euphoria range.",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/csm/caramel_1024x1024_e5fbf151-0cfd-42c9-a5ec-f49d6104bcbc1.jpg",
+    "price": 76
+  },
+  {
+    "id": "15",
+    "brand": "clinique",
+    "name": "Moisture Surge&trade; CC Cream Hydrating Colour Corrector Broad Spectrum SPF 30",
+    "description": "description 15",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_7WCP_181x209.png",
+    "price": 69
+  },
+  {
+    "id": "16",
+    "brand": "marienatie",
+    "name": "Pressed Eye Shadow",
+    "description": "Hypoallergenic shadows that are rich in colour with a lightweight texture.  These MarieNatie shadows are fragrance-free and will stay on all day.   Compact comes with a mini brush that can be stored away.  Titanium dioxide acts as an absorbent of oil and jojoba cleanses and moisturizes the skin.",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/csm/pressed_eyeshadow_LORES_1024x1024_55deb6c3-b7cd-4cb5-9ede-f2931c07312a1.jpg",
+    "price": 35
+  },
+  {
+    "id": "17",
+    "brand": "marienatie",
+    "name": "Mineral Blush",
+    "description": "description 17",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/csm/Blush_copy_1024x1024_edd99d6d-301e-4ba1-aa74-a33d21147b7c1.jpg",
+    "price": 60
+  },
+  {
+    "id": "18",
+    "brand": "marienatie",
+    "name": "Perfect Lash Mascara",
+    "description": "Marie Natie Perfect Lash Mascara is made with all natural ingredients that will not only condition your lashes",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2017/06/marie-natie-perfect-lash-mascara.png",
+    "price": 11
+  },
+  {
+    "id": "19",
+    "brand": "marienatie",
+    "name": "Loose Mineral Eyeshadow",
+    "description": "Long-lasting eye colours delivering an instant glam and shimmer.",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/csm/Loose_MineralEyeshadow_1024x1024_a958d62b-c518-4548-a2cd-9c8981f5edee1.jpg",
+    "price": 30
+  },
+  {
+    "id": "20",
+    "brand": "clinique",
+    "name": "Acne Solutions BB Cream Broad Spectrum SPF 40",
+    "description": "description 20",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_Z54E_181x209.png",
+    "price": 48
+  },
+  {
+    "id": "21",
+    "brand": "maia's mineral galaxy",
+    "name": "Mineral Eye Brow Liner Charcoal Brown",
+    "description": "beautiful",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/06/Maia%E2%80%99s-Mineral-Galaxy-Mineral-Eye-Brow-Liner-Charcoal-Brown.jpg",
+    "price": 38
+  },
+  {
+    "id": "22",
+    "brand": "lotus cosmetics usa",
+    "name": "Mascara",
+    "description": "All natural mascara lengthens, thickens, and defines lashes. Created with coffee extract, rice proteins and sunflower",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/03/lotus-cosmetics-usa-mascara-black.png",
+    "price": 61
+  },
+  {
+    "id": "23",
+    "brand": "lotus cosmetics usa",
+    "name": "Creme to Powder Blush",
+    "description": "A cream to powder blush made with all natural ingredients that applies like a soft cream but finishes like",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/03/lotus-cosmetics-usa-creme-to-powder-blush.png",
+    "price": 68
+  },
+  {
+    "id": "24",
+    "brand": "lotus cosmetics usa",
+    "name": "Eye Shadow Palette Mesmerize",
+    "description": "A four-color eyeshadow palette infused with natural minerals and antioxidant rich extracts to help prevent fine lines",
+    "imageLink": "http://www.purpicks.com/wp-content/uploads/2018/03/lotus-cosmetics-usa-eye-shadow-palette-mesmerize.png",
+    "price": 92
+  },
+  {
+    "id": "25",
+    "brand": "lotus cosmetics usa",
+    "name": "Eye Shadow Palette Seduction",
+    "description": "A four-color eyeshadow palette infused with natural minerals and antioxidant rich extracts to help prevent fine lines",
+    "imageLink": "http://www.purpicks.com/wp-content/uploads/2018/03/lotus-cosmetics-usa-eye-shadow-palette-seduction.png",
+    "price": 11
+  },
+  {
+    "id": "26",
+    "brand": "lotus cosmetics usa",
+    "name": "Eye Shadow Palette Cocoa",
+    "description": "description 26",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/03/lotus-cosmetics-usa-eye-shadow-palette-cocoa.png",
+    "price": 29
+  },
+  {
+    "id": "27",
+    "brand": "green people",
+    "name": "Volumising Mascara",
+    "description": "description 27",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/06/Green-People-Volumising-Mascara-Black.jpg",
+    "price": 7
+  },
+  {
+    "id": "28",
+    "brand": "coastal classic creation",
+    "name": "Conch Lipstick",
+    "description": "description 28",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/06/coastal-classic-creations-conch-lipstick.png",
+    "price": 0
+  },
+  {
+    "id": "29",
+    "brand": "c'est moi",
+    "name": "Reflect Lip Gloss",
+    "description": "description 29",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/04/cest-moi-reflect-lip-gloss-1.png",
+    "price": 80
+  },
+  {
+    "id": "30",
+    "brand": "c'est moi",
+    "name": "Muse Mascara",
+    "description": "description 30",
+    "imageLink": "https://www.purpicks.com/wp-content/uploads/2018/04/cest-moi-muse-mascara.png",
+    "price": 25
+  },
+  {
+    "id": "31",
+    "brand": "glossier",
+    "name": "Stretch Concealer",
+    "description": "description 31",
+    "imageLink": "https://static-assets.glossier.com/production/spree/images/attachments/000/001/631/portrait_normal/SC_Carousel_1_copy_2.jpg?1506948615",
+    "price": 42
+  },
+  {
+    "id": "32",
+    "brand": "glossier",
+    "name": "Cloud Paint",
+    "description": "description 32",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_7KYL01_181x209.png",
+    "price": 100
+  },
+  {
+    "id": "33",
+    "brand": "nyx",
+    "name": "Fly With Me Mascara",
+    "description": "description 33",
+    "imageLink": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwd5e25f68/ProductImages/Eyes/Fly_With_Me_Mascara/800897141431_flywithmemascara_main.jpg?sw=390&sh=390&sm=fit",
+    "price": 22
+  },
+  {
+    "id": "34",
+    "brand": "nyx",
+    "name": "Propel My Eyes Mascara",
+    "description": "description 34",
+    "imageLink": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw8068dbc4/ProductImages/Eyes/Propel_My_Eyes_Mascara/propelmyeyesmascara_main.jpg?sw=390&sh=390&sm=fit",
+    "price": 90
+  },
+  {
+    "id": "35",
+    "brand": "nyx",
+    "name": "Proof It! Waterproof Mascara Top Coat",
+    "description": "description 35",
+    "imageLink": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw31cb2063/ProductImages/Eyes/Proof_It_Waterproof_Mascara_Top_Coat/proofitwaterproofmascaratopcoat_main.jpg?sw=390&sh=390&sm=fit",
+    "price": 58
+  },
+  {
+    "id": "36",
+    "brand": "nyx",
+    "name": "Big & Loud Lash Primer",
+    "description": "description 36",
+    "imageLink": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwa4949d3a/ProductImages/Eyes/Big_And_Loud_Lash_Primer/bigandloudlashprimer_alt1.jpg?sw=390&sh=390&sm=fit",
+    "price": 37
+  },
+  {
+    "id": "37",
+    "brand": "nyx",
+    "name": "Double Stacked Mascara",
+    "description": "description 37",
+    "imageLink": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw255fbdae/ProductImages/2016/Eyes/Double_Stacked_Mascara/doublestackedmascara_main.jpg?sw=390&sh=390&sm=fit",
+    "price": 29
+  },
+  {
+    "id": "38",
+    "brand": "nyx",
+    "name": "Doll Eye Mascara",
+    "description": "description 38",
+    "imageLink": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw2e036256/ProductImages/Eyes/Doll_Eye_Mascara/800897123543_dolleyemascara_longlash_black_main.jpg?sw=390&sh=390&sm=fit",
+    "price": 38
+  },
+  {
+    "id": "39",
+    "brand": "nyx",
+    "name": "The Skinny Mascara",
+    "description": "description 39",
+    "imageLink": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwcb91e11f/ProductImages/Eyes/The_Skinny_Mascara/theskinnymascara_main.jpg?sw=390&sh=390&sm=fit",
+    "price": 0
+  },
+  {
+    "id": "40",
+    "brand": "nyx",
+    "name": "Color Mascara",
+    "description": "description 40",
+    "imageLink": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw8044f7e7/ProductImages/Eyes/Color_Mascara/colormascara_main.jpg?sw=390&sh=390&sm=fit",
+    "price": 72
+  },
+  {
+    "id": "41",
+    "brand": "nyx",
+    "name": "Eyebrow Marker",
+    "description": "description 41",
+    "imageLink": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dwe10bfffa/ProductImages/Eyes/Eyebrow_Marker/eyebrowmarker_main.jpg?sw=390&sh=390&sm=fit",
+    "price": 39
+  },
+  {
+    "id": "42",
+    "brand": "clinique",
+    "name": "CliniqueFIT™ Workout Makeup Broad Spectrum SPF 40",
+    "description": "description 42",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_K4NG01_181x209.png",
+    "price": 85
+  },
+  {
+    "id": "43",
+    "brand": "clinique",
+    "name": "Super City Block™ BB Cushion Compact Broad Spectrum SPF 50 Refill",
+    "description": "description 43",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_ZLE601_181x209.png",
+    "price": 19
+  },
+  {
+    "id": "44",
+    "brand": "clinique",
+    "name": "Almost Powder Makeup",
+    "description": "description 44",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_6MPY02_181x209.png",
+    "price": 61
+  },
+  {
+    "id": "45",
+    "brand": "clinique",
+    "name": "Clinique BIY&trade; Blend It Yourself Pigment Drops",
+    "description": "description 45",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_ZWXK0A_181x209.png",
+    "price": 23
+  },
+  {
+    "id": "46",
+    "brand": "clinique",
+    "name": "Even Better Glow&trade; Light Reflecting Makeup Broad Spectrum SPF 15",
+    "description": "description 46",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_ZY5X_181x209.png",
+    "price": 96
+  },
+  {
+    "id": "47",
+    "brand": "clinique",
+    "name": "Acne Solutions&trade; Clearing Concealer",
+    "description": "description 47",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_6N4T_181x209.png",
+    "price": 79
+  },
+  {
+    "id": "48",
+    "brand": "clinique",
+    "name": "Wear Everywhere Neutrals All About Shadow&trade; 8-Pan Palette",
+    "description": "description 48",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_ZCAE02_181x209.png",
+    "price": 87
+  },
+  {
+    "id": "49",
+    "brand": "clinique",
+    "name": "Line Smoothing Concealer",
+    "description": "description 49",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_65EF_181x209.png",
+    "price": 75
+  },
+  {
+    "id": "50",
+    "brand": "clinique",
+    "name": "All About Eyes&trade; Concealer",
+    "description": "description 50",
+    "imageLink": "https://www.clinique.com/media/export/cms/products/181x209/clq_6FKW_181x209.png",
+    "price": 84
+  }
+]
