@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 
-export default function ProductPage({allProducts, addToCart, params}) {
+export default function ProductPage({allProducts, addToCart}) {
     
     const {id}=useParams();
     
@@ -23,14 +23,14 @@ export default function ProductPage({allProducts, addToCart, params}) {
                 return (
                     <div key={item.id} className="productPage">
                         <div>
-                            <div><img src={item.imageLink} alt=""/></div>
+                            <div><img src={item.imageLink} className="productPageImg" alt="n"/></div>
                         </div>
                         <div>
                             <p>{item.brand}</p>
                             <h2>{item.name}</h2>
                             <p>{item.description}</p>
                             <h5>${item.price}</h5>
-                            <div><button className="CardBtn" onClick={() =>addToCart(product)}>Add to Cart</button></div>
+                            {/* <div><button className="CardBtn" onClick={() =>addToCart(item)}>Add to Cart</button></div> */}
                         </div>
 
                     </div>
