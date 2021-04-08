@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import {useParams} from 'react-router-dom'
+import {useParams, Link} from 'react-router-dom'
 
 export default function ProductPage({allProducts, addToCart}) {
     
@@ -37,7 +37,9 @@ export default function ProductPage({allProducts, addToCart}) {
                 )
             })}
            
-
+           <Link to={`/`}>
+                Back for more items!
+            </Link>
         </div>
     )
 }
