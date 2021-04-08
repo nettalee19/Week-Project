@@ -63,7 +63,7 @@ export default function AddressForm() {
                     <label>City:</label>
                      <input type="text" placeholder="City" id="city" name='city' onChange={(e) =>setCity(e.target.value)} required></input>
                 </div>
-                {/* <div className="addressform-section">
+                <div className="addressform-section">
                     <label>Country:</label>
                     <select name="c" id="c">
                         {country.map((c) =>{
@@ -71,7 +71,7 @@ export default function AddressForm() {
                             
                         })}
                     </select>
-                </div> */}
+                </div>
                 <div className="addressform-section">
                     <label>ZIP:</label>
                     <input type="email" placeholder="ZIP" id="zip" name='zip' onChange={(e) =>setZIP(e.target.value)} required></input>
