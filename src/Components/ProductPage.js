@@ -22,8 +22,8 @@ export default function ProductPage({allProducts, addToCart}) {
             {product.map(item =>{
                 return (
                     <div key={item.id} className="productPage">
-                        <div>
-                            <div><img src={item.imageLink} className="productPageImg" alt="n"/></div>
+                        <div className="productPageImg">
+                            <div><img src={item.imageLink}  alt="n"/></div>
                         </div>
                         <div>
                             <p>{item.brand}</p>
