@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react'
 import Checkout from './Checkout'
 import {Link, Route} from 'react-router-dom'
 import axios from 'axios'
-
+// const proxy = 'https://api.allorigins.win/raw?url=';
+const proxy ='https://api.codetabs.com/v1/proxy/?quest=';
 const countries = 'https://restcountries.eu/rest/v2/all';
 
 
@@ -20,7 +21,7 @@ export default function AddressForm() {
     }
 
     const getCountries = async () =>{
-        const response = await axios.get(`${countries}`)
+        const response = await axios.get(`${proxy}${countries}`)
         
        
         setCountry(response.data)
@@ -62,15 +63,15 @@ export default function AddressForm() {
                     <label>City:</label>
                      <input type="text" placeholder="City" id="city" name='city' onChange={(e) =>setCity(e.target.value)} required></input>
                 </div>
-                <div className="addressform-section">
+                {/* <div className="addressform-section">
                     <label>Country:</label>
-                    {/* <select name="c" id="c">
+                    <select name="c" id="c">
                         {country.map((c) =>{
                             return <option value={c.name}>{c.name}</option>
                             
                         })}
-                    </select> */}
-                </div>
+                    </select>
+                </div> */}
                 <div className="addressform-section">
                     <label>ZIP:</label>
                     <input type="email" placeholder="ZIP" id="zip" name='zip' onChange={(e) =>setZIP(e.target.value)} required></input>

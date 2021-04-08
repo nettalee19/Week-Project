@@ -30,7 +30,7 @@ export default function ProductPage({allProducts, addToCart}) {
                             <h2>{item.name}</h2>
                             <p>{item.description}</p>
                             <h5>${item.price}</h5>
-                            {/* <div><button className="CardBtn" onClick={() =>addToCart(item)}>Add to Cart</button></div> */}
+                            <div><button className="CardBtn" onClick={() =>addToCart(item)}>Add to Cart</button></div>
                         </div>
 
                     </div>

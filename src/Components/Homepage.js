@@ -57,9 +57,9 @@ export default function Homepage() {
                 item.id === product.id ? {...exist, qty: exist.qty +1}: item //update the qty
                 ))
             }
-            else{//is not in the cart
-                setCartItems([...cartItems, {...product, qty: 1}])
-            }
+        else{//is not in the cart
+            setCartItems([...cartItems, {...product, qty: 1}])
+        }
             
         })
         
@@ -101,7 +101,7 @@ export default function Homepage() {
                     
                     </Route>
                    
-                    <Route path="/ProductPage/:id" component={()=><ProductPage allProducts={makeup}/>}/> 
+                    <Route path="/ProductPage/:id" component={()=><ProductPage allProducts={makeup} addToCart={addToCart}/>}/> 
 
                   
 
