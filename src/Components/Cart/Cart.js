@@ -67,9 +67,9 @@ function Cart({x, cartItems, addToCart, removeFromCart}) {
                             <div className="col-1 text-right"><strong>${totalPrice}</strong></div>
                         </div>
                     <hr/>
-                    <Link to={`/addressform`} className="checkout row">
+                    {/* <Link to={`/addressform`} className="checkout row">
                     Checkout 
-                    </Link>
+                    </Link> */}
                     </div>
                 ) : <></>}
 
